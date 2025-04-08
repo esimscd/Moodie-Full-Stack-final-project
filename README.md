@@ -9,3 +9,27 @@ Drawing
 
 Why do you do it? 
 Relaxes the mind, helps me  unwind
+
+### Danni
+
+Text here!
+
+### Gabriella
+
+Text here!
+
+### Lisa
+
+Text here!
+
+### Lizzie
+
+Text here!
+
+### Osayi
+
+Text here!
+
+### Rima
+
+Text here!
