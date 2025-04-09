@@ -14,6 +14,14 @@
   --soft-beige: #eacdc2;
 }
 
+/* 
+How to use the variables: var(--VARIABLE_NAME) 
+e.g
+h4 {
+  color: var(--deep-plum);
+}
+*/
+
 .logo {
   height: 15em;
   padding: 5em;
