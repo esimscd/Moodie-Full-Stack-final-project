@@ -20,11 +20,8 @@ function App() {
         </button>
         <img className="logo" src="../moodie_logo.png" />
           <h3>Here is a quick intro to the team and our favourite film (or two!)</h3>
-          <ul style={{ listStyle: "none", paddingLeft: 0 }}>
-            <li>
-              🎬 <strong>Danni</strong> loves Inception and/or Tangled!
-            </li>
-          </ul>
+            <h4>🎬 Danni</h4>
+            <p>loves Inception and/or Tangled!</p>
           <h4>🍿 Lizzie</h4>
           <p>My favourite film is The Royal Tenenbaums but honerable mention to Encanto!</p>
       </div>
