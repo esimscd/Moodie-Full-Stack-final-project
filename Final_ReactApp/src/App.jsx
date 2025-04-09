@@ -24,6 +24,8 @@ function App() {
             <p>loves Inception and/or Tangled!</p>
           <h4>🍿 Lizzie</h4>
           <p>My favourite film is The Royal Tenenbaums but honerable mention to Encanto!</p>
+          <h4>🎞 Lisa</h4>
+          <p>I have too many favourite films so I selected 2 random ones: Avengers Age of Ultron and Disney's Hercules :D</p>
       </div>
     </>
   );
