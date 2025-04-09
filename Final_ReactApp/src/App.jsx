@@ -19,14 +19,14 @@ function App() {
           count is {count}
         </button>
         <img className="logo" src="../moodie_logo.png" />
-        <p>
-          Here is a quick intro to the team and our favourite film (or two!)
+          <h3>Here is a quick intro to the team and our favourite film (or two!)</h3>
           <ul style={{ listStyle: "none", paddingLeft: 0 }}>
             <li>
               🎬 <strong>Danni</strong> loves Inception and/or Tangled!
             </li>
           </ul>
-        </p>
+          <h4>🍿 Lizzie</h4>
+          <p>My favourite film is The Royal Tenenbaums but honerable mention to Encanto!</p>
       </div>
     </>
   );
