@@ -5,8 +5,32 @@ import "./App.css";
 import "./index.css";
 import moodie_logo from "../moodie_logo.png";
 
+// Please put your name and favourite films here so that it shows up in the carousel!
+const teamMembers = [
+  {
+    name: "🎬 Danni",
+    films: "Loves Inception and/or Tangled!",
+  },
+  {
+    name: "🍿 Lizzie",
+    films: "My favourite film is The Royal Tenenbaums but honerable mention to Encanto!",
+  },
+  {
+    name: "🎞 Lisa",
+    films: "I have too many favourite films so I selected 2 random ones: Avengers Age of Ultron and Disney's Hercules :D",
+  },
+];
+
 function App() {
   const [count, setCount] = useState(0);
+  const [currentMember, setCurrentMember] = useState(0);
+  
+  const nextMember = () =>
+    setCurrentMember((prev) => (prev + 1) % teamMembers.length);
+  const prevMember = () =>
+    setCurrentMember((prev) =>
+      prev === 0 ? teamMembers.length - 1 : prev - 1
+    );
 
   return (
     <>
@@ -18,39 +42,34 @@ function App() {
 
       <main className="main-content">
         <section className="intro-section">
-        <h1>Welcome to Moodie: Our Movie Quiz App!</h1>
+        <h1>Welcome to Moodie!</h1>
         <h3>
-        We're building an app that recommends movies based on your mood using a short quiz. This project is currently known as:
+        We're building an app that recommends movies based on your mood and preferences.
+        <br />
+        It's powered by a fun little quiz 😉
         </h3>
         <button onClick={() => setCount((count) => count + 1)}>
           Count is {count}
         </button>
+        </section>
         
-        <section className="team-section"></section>
+        <section className="team-carousel">
         <h2>🎉 Meet the Team 🎉</h2>
           <h3>Here is a quick intro to the team and our favourite film (or two!)</h3>
-        <div className="team-grid">
-          <div className="Danni"></div>
-            <h4>🎬 Danni</h4>
-            <p>Loves Inception and/or Tangled!</p>
-          </div>
-
-          <div className="Lizzie">
-              <h4>🍿 Lizzie</h4>
-              <p>My favourite film is The Royal Tenenbaums but honerable mention to Encanto!</p>
-          </div>
-
-        <div className="Lisa">
-          <h4>🎞 Lisa</h4>
-          <p>I have too many favourite films so I selected 2 random ones: Avengers Age of Ultron and Disney's Hercules :D</p>
+        <div className="carousel-card">
+          <h3>{teamMembers[currentMember].name}</h3>
+          <p>{teamMembers[currentMember].films}</p>
+          <div className="carousel-buttons"></div>
+          <button onClick={prevMember}>Prev</button>
+          <button onClick={nextMember}>Next</button>
         </div>
       </section>
-        </main>
+    </main>
 
-        <footer className="footer">
-          <p>&copy; 2025 Moodie Movie Picker | Group 1 </p>
-        </footer>
-      </div>
+    <footer className="footer">
+      <p>&copy; 2025 Moodie Movie Picker | Group 1 </p>
+    </footer>
+     </div>
     </>
   );
 }
