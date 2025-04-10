@@ -80,7 +80,8 @@ function App() {
     </main>
 
     <footer className="footer">
-      <p>&copy; 2025 Moodie Movie Picker | Group 1 </p>
+      <p>I'm not lazy, I'm just in a long-term relationship with my movie queue 🍿</p>
+      <p>&copy; 2025 Moodie: Movie Picker | Group 1 </p>
     </footer>
      </div>
     </>
