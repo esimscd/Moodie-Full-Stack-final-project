@@ -10,14 +10,22 @@ const teamMembers = [
   {
     name: "🎬 Danni",
     films: "Loves Inception and/or Tangled!",
+    avatar: "",
   },
   {
     name: "🍿 Lizzie",
     films: "My favourite film is The Royal Tenenbaums but honerable mention to Encanto!",
+    avatar: "",
   },
   {
     name: "🎞 Lisa",
     films: "I have too many favourite films so I selected 2 random ones: Avengers Age of Ultron and Disney's Hercules :D",
+    avatar: "",
+  },
+  {
+    name: "🎥 Osayi",
+    films: "I genuinely can't pick just one — so here are three heavy hitters that I absolutely love 🥰: The Book of Life, Mulan I & II, and Turning Red.",
+    avatar: "",
   },
 ];
 
@@ -57,6 +65,11 @@ function App() {
         <h2>🎉 Meet the Team 🎉</h2>
           <h3>Here is a quick intro to the team and our favourite film (or two!)</h3>
         <div className="carousel-card">
+          <img
+          src={teamMembers[currentMember].avatar}
+          alt={`${teamMembers[currentMember].name} avatar`}
+          className="avatar-img"
+          />
           <h3>{teamMembers[currentMember].name}</h3>
           <p>{teamMembers[currentMember].films}</p>
           <div className="carousel-buttons"></div>
