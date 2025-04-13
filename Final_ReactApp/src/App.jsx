@@ -8,8 +8,18 @@ import moodie_logo from "../moodie_logo.png";
 // Please put your name and favourite films here so that it shows up in the carousel!
 const teamMembers = [
   {
+    name: "📼 Alissa",
+    films: "Clueless for a feel good film, Annihilation or Dune for high quality sci-fi, and most Werner Herzog documentaries for a deadpan perspective.",
+    avatar: "",
+  },
+  {
     name: "🎬 Danni",
     films: "Loves Inception and/or Tangled!",
+    avatar: "",
+  },
+  {
+    name: " 🎟️ Gabriella",
+    films: "I love Spirited Away, The Blair Witch Project and Texas Chainsaw Massacre! One is very much not like the others 👻 ",
     avatar: "",
   },
   {
@@ -28,19 +38,9 @@ const teamMembers = [
     avatar: "",
   },
   {
-    name: " 🎟️ Gabriella",
-    films: "I love Spirited Away, The Blair Witch Project and Texas Chainsaw Massacre! One is very much not like the others 👻 ",
-    avatar: "",
-  },
-  {
     name: " 📽️ Rima",
     films: "My favourite go to movie is Harry Potter and the Philosopher's Stone, also love the Fast and Furious franchise! I know, I know, but I love the action and the cars! 🚗💨",
     avatar: "",
-},
-{
-  name: "📼 Alissa",
-  films: "Clueless for a feel good film, Annihilation or Dune for high quality sci-fi, and most Werner Herzog documentaries for a deadpan perspective.",
-  avatar: "",
 },
 ];
 function App() {
@@ -94,7 +94,8 @@ function App() {
     </main>
 
     <footer className="footer">
-      <p>&copy; 2025 Moodie Movie Picker | Group 1 </p>
+      <p>I'm not lazy, I'm just in a long-term relationship with my movie queue 🍿</p>
+      <p>&copy; 2025 Moodie: Movie Picker | Group 1 </p>
     </footer>
      </div>
     </>
