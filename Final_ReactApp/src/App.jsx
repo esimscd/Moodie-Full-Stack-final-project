@@ -4,6 +4,7 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import "./index.css";
 import moodie_logo from "../moodie_logo.png";
+import Home from './pages/Home';
 
 // Please put your name and favourite films here so that it shows up in the carousel!
 const teamMembers = [
@@ -56,48 +57,49 @@ function App() {
 
   return (
     <>
-     <div className="app-container">
-      <header className="header">
-        <img src={moodie_logo} className="header-logo" alt="Moodie Logo" />
-      <h1>🎬Group 1 Introduction🍿</h1>
-      </header>
+      <div className="app-container">
+        {/* <Home /> */}
+        <header className="header">
+          <img src={moodie_logo} className="header-logo" alt="Moodie Logo" />
+        <h1>🎬Group 1 Introduction🍿</h1>
+        </header>
 
-      <main className="main-content">
-        <section className="intro-section">
-        <h1>Welcome to Moodie!</h1>
-        <h3>
-        We're building an app that recommends movies based on your mood and preferences.
-        <br />
-        It's powered by a fun little quiz 😉
-        </h3>
-        <button onClick={() => setCount((count) => count + 1)}>
-          Count is {count}
-        </button>
+        <main className="main-content">
+          <section className="intro-section">
+          <h1>Welcome to Moodie!</h1>
+          <h3>
+          We're building an app that recommends movies based on your mood and preferences.
+          <br />
+          It's powered by a fun little quiz 😉
+          </h3>
+          <button onClick={() => setCount((count) => count + 1)}>
+            Count is {count}
+          </button>
+          </section>
+          
+          <section className="team-carousel">
+          <h2>🎉 Meet the Team 🎉</h2>
+            <h3>Here is a quick intro to the team and our favourite film (or two!)</h3>
+          <div className="carousel-card">
+            <img
+            src={teamMembers[currentMember].avatar}
+            alt={`${teamMembers[currentMember].name} avatar`}
+            className="avatar-img"
+            />
+            <h3>{teamMembers[currentMember].name}</h3>
+            <p>{teamMembers[currentMember].films}</p>
+            <div className="carousel-buttons"></div>
+            <button onClick={prevMember}>Prev</button>
+            <button onClick={nextMember}>Next</button>
+          </div>
         </section>
-        
-        <section className="team-carousel">
-        <h2>🎉 Meet the Team 🎉</h2>
-          <h3>Here is a quick intro to the team and our favourite film (or two!)</h3>
-        <div className="carousel-card">
-          <img
-          src={teamMembers[currentMember].avatar}
-          alt={`${teamMembers[currentMember].name} avatar`}
-          className="avatar-img"
-          />
-          <h3>{teamMembers[currentMember].name}</h3>
-          <p>{teamMembers[currentMember].films}</p>
-          <div className="carousel-buttons"></div>
-          <button onClick={prevMember}>Prev</button>
-          <button onClick={nextMember}>Next</button>
-        </div>
-      </section>
-    </main>
+      </main>
 
-    <footer className="footer">
-      <p>I'm not lazy, I'm just in a long-term relationship with my movie queue 🍿</p>
-      <p>&copy; 2025 Moodie: Movie Picker | Group 1 </p>
-    </footer>
-     </div>
+      <footer className="footer">
+        <p>I'm not lazy, I'm just in a long-term relationship with my movie queue 🍿</p>
+        <p>&copy; 2025 Moodie: Movie Picker | Group 1 </p>
+      </footer>
+      </div>
     </>
   );
 }
