@@ -20,7 +20,7 @@ const teamMembers = [
   {
     name: " 🎟️ Gabriella",
     films: "I love Spirited Away, The Blair Witch Project and Texas Chainsaw Massacre! One is very much not like the others 👻 ",
-    avatar: "",
+    avatar: "/Images/TeamAvatars/Gabriella.png",
   },
   {
     name: "🍿 Lizzie",
