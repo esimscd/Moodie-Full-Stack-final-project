@@ -1,5 +1,6 @@
 import React from "react";
-import StartMoodieNavbar from "../components/navbar/StartMoodieNavbar";
+import StartMoodieNavbar from "../components/navbar/StartMoodieNavbar"
+import moodieLogo from "../Images/moodie_logo.png"; // Import the logo image
 
 const StartMoodie = () => {
    return (

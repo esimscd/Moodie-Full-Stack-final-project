@@ -3,7 +3,8 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 import "./index.css";
-import moodie_logo from "../moodie_logo.png";
+import moodie_logo from "./Images/moodie_logo.png";
+import Home from "./pages/Home";
 
 // Please put your name and favourite films here so that it shows up in the carousel!
 const teamMembers = [
