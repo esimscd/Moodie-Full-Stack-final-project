@@ -3,25 +3,25 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 import "./index.css";
-import moodie_logo from "../moodie_logo.png";
-import Home from './pages/Home';
+import moodie_logo from "./Images/moodie_logo.png";
+import Home from "./pages/Home";
 
 // Please put your name and favourite films here so that it shows up in the carousel!
 const teamMembers = [
   {
     name: "📼 Alissa",
     films: "Clueless for a feel good film, Annihilation or Dune for high quality sci-fi, and most Werner Herzog documentaries for a deadpan perspective.",
-    avatar: "",
+    avatar: "./Images/TeamAvatars/Alissa.png",
   },
   {
     name: "🎬 Danni",
     films: "Loves Inception and/or Tangled!",
-    avatar: "",
+    avatar: "/Images/TeamAvatars/Danni.png",
   },
   {
     name: " 🎟️ Gabriella",
     films: "I love Spirited Away, The Blair Witch Project and Texas Chainsaw Massacre! One is very much not like the others 👻 ",
-    avatar: "",
+    avatar: "/Images/TeamAvatars/Gabriella.png",
   },
   {
     name: "🍿 Lizzie",
@@ -36,12 +36,12 @@ const teamMembers = [
   {
     name: "🎥 Osayi",
     films: "I genuinely can't pick just one — so here are three heavy hitters that I absolutely love 🥰: The Book of Life, Mulan I & II, and Turning Red.",
-    avatar: "",
+    avatar: "./Images/TeamAvatars/Osayi.png",
   },
   {
     name: " 📽️ Rima",
     films: "My favourite go to movie is Harry Potter and the Philosopher's Stone, also love the Fast and Furious franchise! I know, I know, but I love the action and the cars! 🚗💨",
-    avatar: "",
+    avatar: "./Images/TeamAvatars/Rima.png",
 },
 ];
 function App() {
