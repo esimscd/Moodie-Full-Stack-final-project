@@ -40,8 +40,7 @@ return (
         <img src={`https://image.tmdb.org/t/p/w500/${movies.poster_path}`} alt={movies.title} />
         <p>{movies.overview}</p>
         <p>Release Date: {movies.release_date}</p>
-        <p>Runtime: {movies.runtime} minutes</p>
-    </div>
+    </div> //will add more to this, maybe runtime rating etc?
 )
 };
 
