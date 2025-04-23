@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import "../styles/QuizQuestions.css";
 // import { useNavigate } from "react-router-dom";
 
 const QuizQuestions = () => {
