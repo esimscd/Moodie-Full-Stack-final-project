@@ -1,7 +1,7 @@
 import React from 'react';
 // import Navbar from '../components/Navbar';
 import HomeNavbar from '../components/navbar/HomeNavbar';
-import moodieLogo from '../Images/moodie_logo.png'; // Import the logo image
+import moodieLogo from '../assets/logos/moodie_logo.png'; // Import the logo image
 
 const Home = () => {
    return (

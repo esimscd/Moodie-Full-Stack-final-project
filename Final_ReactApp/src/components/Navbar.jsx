@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import '../styles/navbar.css';
-import moodieLogo from "../Images/moodie_logo.png"; // Import the logo image
+import moodieLogo from "../assets/logos/moodie_logo.png"; // Import the logo image
 
 const Navbar = () => {
    const navigate = useNavigate();

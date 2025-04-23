@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
-import moodieLogo from "../../../moodie_logo.png";
+import moodieLogo from "../../../logos/moodie_logo.png";
 import "../../styles/navbar.css";
 
 const StartAgainNavbar = () => {

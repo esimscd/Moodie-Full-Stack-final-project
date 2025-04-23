@@ -1,6 +1,6 @@
 import React from "react";
 import TheCreators from "../components/navbar/TheCreators";
-import moodieLogo from "../Images/moodie_logo.png"; // Import the logo image
+import moodieLogo from "../assets/logos/moodie_logo.png"; // Import the logo image
 
 const TheCreators = () => {
     return (
