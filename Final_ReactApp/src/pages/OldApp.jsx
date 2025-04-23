@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import "./index.css";
-import moodie_logo from "./assets/moodie_logo.png";
+import moodie_logo from "./assets/logos/moodie_logo.png";
 import Home from "./pages/Home";
 
 // Please put your name and favourite films here so that it shows up in the carousel!

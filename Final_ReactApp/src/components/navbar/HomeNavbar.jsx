@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
-import moodieLogo from "../../assets/moodie_logo.png";
+import moodieLogo from "../../assets/logos/moodie_logo.png";
 import '../../styles/navbar.css';
 
 const HomeNavbar = () => {
