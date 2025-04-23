@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import moodieLogo from "../../Images/moodie_logo.png"; // Import the logo image
+import moodieLogo from "../../assets/moodie_logo.png"; // Import the logo image
 import '../../styles/navbar.css';
 
 const TheCreators = () => {
