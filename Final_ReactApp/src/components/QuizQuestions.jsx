@@ -1,17 +1,17 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { useState } from "react";
 import "../styles/QuizQuestions.css";
-// import { useNavigate } from "react-router-dom";
 
 const QuizQuestions = () => {
   // Utilise useState to manage the current question to to be displayed and the options for answers
   const [currentIndex, setCurrentIndex] = useState(0);
   // Utilise useState to manage the answers selected by the user
   // Quiz Answers will initially be an empty object and will be updated each time a user selects an answer
+  // Note: the Below state is not in use yet but we will need to use it to store the answers and then pass this to the API
   const [quizAnswers, setQuizAnswers] = useState({});
 
   // Array containing quiz questions and different options for the corresponding buttons
+  // We can potential abstract this out into a JSON file to make it easier to manage but for an MVP it does the work!
   const quizQuestions = [
     {
       id: "ageRange",
@@ -61,29 +61,35 @@ const QuizQuestions = () => {
   // Updates the quizAnswers state with the selected answer
   // Increments the currentIndex to enable the quiz to move to the next question
   const handleAnswer = (questionId, answer) => {
-    setQuizAnswers((prevAnswers) => ({
-      ...prevAnswers,
+    setQuizAnswers((quizAnswers) => ({
+      ...quizAnswers,
       [questionId]: answer,
     }));
+    console.log(quizAnswers);
+    // Move to the next question
     setCurrentIndex((prevIndex) => prevIndex + 1);
   };
 
   return (
     <>
-      <h2>{currentQuestion.question}</h2>
-      {currentQuestion.options.map((option) => (
-        <button
-          key={option}
-          onClick={() => handleAnswer(currentQuestion.id, option)}
-        >
-          {option}
-        </button>
-      ))}
-      {currentIndex === quizQuestions.length - 1 && (
-        <div>
-          <h3>Your Answers:</h3>
-          <p>ADD IN ANSWERS HERE</p>
-        </div>
+      {currentIndex < quizQuestions.length - 1 ? (
+        <>
+          <h2>{currentQuestion.question}</h2>
+          {currentQuestion.options.map((option) => (
+            <button
+              key={option}
+              onClick={() => handleAnswer(currentQuestion.id, option)}
+            >
+              {option}
+            </button>
+          ))}
+        </>
+      ) : (
+        <>
+          {/* This is purely for development purposes and will be removed in the final version */}
+          <h3 className="answers">Your Answers:</h3>
+          <pre className="answers">{JSON.stringify(quizAnswers, null, 2)}</pre>
+        </>
       )}
     </>
   );

@@ -1,15 +1,25 @@
 import "../styles/StartMoodie.css";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function ChoosePath() {
+  const navigate = useNavigate();
+  // Function to handle the answer that is chosen by the user
+  const handleClick = (page) => {
+    navigate(page);
+  };
+
   return (
     <>
       <div className="box">
-        {/* This is using link at the moment just to show functionality - need to change to button with onClick function */}
-        <Link to="/quiz" className="path-button">
+        <button onClick={() => handleClick("/Quiz")} className="path-button">
           Quiz
-        </Link>
-        <button className="path-button">Randomise</button>
+        </button>
+        <button
+          onClick={() => handleClick("/Randomise")}
+          className="path-button"
+        >
+          Randomise
+        </button>
       </div>
     </>
   );

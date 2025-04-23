@@ -25,3 +25,9 @@ h1 {
   border-radius: 10px;
   padding: 1em;
 }
+
+.path-button:hover {
+  background-color: #eacdc2;
+  color: #1a1423;
+  cursor: pointer;
+}
