@@ -1,0 +1,29 @@
+.carousel-container {
+   padding: 45px 20px;
+   box-sizing: border-box;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+   color: var(--soft-beige);
+}
+
+.swiper-pagination-bullet {
+   background: var(--vintage-rose);
+   opacity: 0.7;
+}
+.swiper-pagination-bullet-active {
+   background: var(--soft-beige);
+   opacity: 1;
+}
+
+.swiper-slide {
+   display: flex;
+   justify-content: center;
+   padding: 0;
+   margin: 0;
+   width: 100%;
+   max-width: 350px;
+   box-sizing: border-box;
+}
+
