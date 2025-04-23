@@ -4,10 +4,13 @@ import { Link } from "react-router-dom";
 function ChoosePath() {
   return (
     <>
-      <button>
-        <Link to="/quiz">Quiz</Link>
-      </button>
-      <button>Randomise</button>
+      <div className="box">
+        {/* This is using link at the moment just to show functionality - need to change to button with onClick function */}
+        <Link to="/quiz" className="path-button">
+          Quiz
+        </Link>
+        <button className="path-button">Randomise</button>
+      </div>
     </>
   );
 }
