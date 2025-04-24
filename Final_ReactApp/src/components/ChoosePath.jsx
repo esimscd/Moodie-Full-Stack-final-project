@@ -1,12 +1,28 @@
-import "../styles/StartMoodie.css"
+import "../styles/StartMoodie.css";
+import { useNavigate } from "react-router-dom";
 
 function ChoosePath() {
+  const navigate = useNavigate();
+  // Function to handle the answer that is chosen by the user
+  const handleClick = (page) => {
+    navigate(page);
+  };
 
-    return(
-        <div className="box">
-            
-        </div>
-    )
+  return (
+    <>
+      <div className="box">
+        <button onClick={() => handleClick("/Quiz")} className="path-button">
+          Quiz
+        </button>
+        <button
+          onClick={() => handleClick("/Randomise")}
+          className="path-button"
+        >
+          Randomise
+        </button>
+      </div>
+    </>
+  );
 }
 
-export default ChoosePath
+export default ChoosePath;

@@ -1,18 +1,33 @@
 body {
-    background-color:#1A1423;
+  background-color: #1a1423;
 }
 
 h1 {
-    color:#eacdc2;
+  color: #eacdc2;
 }
 .box {
-    border: 2px solid #eacdc2;
-    border-radius: 10px;
-    padding: 2em 2em 24em;
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-bottom: 2%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #eacdc2;
+  border-radius: 10px;
+  padding: 2em 2em 24em;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 2%;
+}
+
+.path-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #eacdc2;
+  border-radius: 10px;
+  padding: 1em;
+}
+
+.path-button:hover {
+  background-color: #eacdc2;
+  color: #1a1423;
+  cursor: pointer;
 }
