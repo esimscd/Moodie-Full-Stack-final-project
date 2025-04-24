@@ -76,6 +76,8 @@ const QuizQuestions = () => {
         <>
           <h2>{currentQuestion.question}</h2>
           {currentQuestion.options.map((option) => (
+            // We will need to add a key to each of the buttons to ensure that React can identify them
+            // We can also create button components to make it easier to manage
             <button
               key={option}
               onClick={() => handleAnswer(currentQuestion.id, option)}
