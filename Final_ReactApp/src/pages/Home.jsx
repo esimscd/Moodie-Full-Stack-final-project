@@ -10,6 +10,7 @@ import Osayi from "../assets/TeamAvatars/Osayi.png";
 import Rima from "../assets/TeamAvatars/Rima.png";
 import HeroImg from '../assets/heroimage.png'
 import Camera from '../assets/camera.png'
+import Footer from "../components/Footer"
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
@@ -126,8 +127,8 @@ const Home = () => {
                   </Swiper>
                </div>
             </div>
-            
          </div>
+         <Footer/>
       </>
    );
 };
