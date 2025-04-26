@@ -21,9 +21,10 @@ const QuizFlow = () => {
       <StartAgainNavbar/>
       <h1>This is the Quiz page!</h1>
       <QuizQuestions quizAnswers ={quizAnswers} setQuizAnswers = {setQuizAnswers} setQuizComplete = {setQuizComplete}/>
-      {quizComplete && (<QuizResults quizAnswers = {quizAnswers}/> )}
+      {quizComplete && (<QuizResults quizAnswers = {quizAnswers}/> )} 
+      
     </>
-  );
+  ); //conditionally rendering results to show when 'setQuizComplete'=true by manually setting it true when questions answered=5
 };
 
 export default QuizFlow;

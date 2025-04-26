@@ -4,7 +4,7 @@ const API_KEY = "39b6478c947539cc4929cc5746e3fd48"
 
 
 const QuizResults = ({quizAnswers}) => {
-    const [movies, setMovies] = useState([]);
+    const [movie, setMovie] = useState([]);
 
     useEffect(() => {
 
@@ -13,9 +13,9 @@ const QuizResults = ({quizAnswers}) => {
     api_key: API_KEY,
     with_genres: quizAnswers.genre, //Genres listed in number codes on TMDB
     "with_runtime.gte": quizAnswers.runTime, //Runtime upper and lower limits
-    "with_runtime.lte": quizAnswers.filmReleaseDate + 30,
-    "primary_release_date.gte": quizAnswers.filmReleaseDate, //Release date range
-    "primary_release_date.lte": quizAnswers.filmReleaseDate + 30,
+    "with_runtime.lte": quizAnswers.runTime + 30,
+    "primary_release_date.gte": quizAnswers.filmReleaseDate.start, //Release date range
+    "primary_release_date.lte": quizAnswers.filmReleaseDate.end,
     "with_origin_country": quizAnswers.countryOfOrigin,
     "vote_average.gte": quizAnswers.ratingsRange //Rating range (0-10 on TMDB)
     });
@@ -32,7 +32,8 @@ const QuizResults = ({quizAnswers}) => {
     //Randomly select one film to display from list of matching films
     const randomIndex = Math.floor(Math.random() * results.length); 
     const randomMovie = results[randomIndex];
-    setMovies(randomMovie);
+    setMovie(randomMovie);
+    console.log(randomMovie)
     };
 
 fetchMovies();
@@ -40,7 +41,18 @@ fetchMovies();
 
 return (
     <div className="movie-card">
-      <p>this will be the results</p>
+      <h4>Here is your movie recommendation:</h4>
+      <h3>{movie.title}</h3>
+      <img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt={movie.title}/>
+      <p>Overview: {movie.overview}</p>
+      <p>Rating: {movie.vote_avergae} /10 </p>
+      <p>Release Date: {movie.release_date}</p>
+      <p>Runtime: {movie.runtime}</p>
+      {movie.genre_ids && (
+          <p><strong>Genre IDs:</strong> {movie.genre_ids.join(", ")}</p>
+        )}
+
+
     </div> //will add more to this, maybe runtime rating etc?
 )
 };

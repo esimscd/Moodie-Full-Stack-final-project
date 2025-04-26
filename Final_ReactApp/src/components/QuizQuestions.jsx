@@ -33,10 +33,10 @@ const QuizQuestions = ({ quizAnswers, setQuizAnswers, setQuizComplete}) => {
       id: "filmReleaseDate",
       question: "What decade of film are you interested in?",
       options: [
-        {label: "1920s", value: {start: "1920-01-01", end: "1929-12-01"}},
-        {label: "1930s", value: {start: "1930-01-01", end: "1939-12-01"}},
-        {label: "1940s", value: {start: "1940-01-01", end: "1949-12-01"}},
-        {label: "1950s", value: {start: "1950-01-01", end: "1959-12-01"}}
+        {label: "1920-1950s", value: {start: "1920-01-01", end: "1949-12-01"}},
+        {label: "1950s-1980s", value: {start: "1950-01-01", end: "1979-12-01"}},
+        {label: "1980s-2000", value: {start: "1980-01-01", end: "1999-12-01"}},
+        {label: "2000-2025", value: {start: "2000-01-01", end: "2024-12-01"}}
       ]
     },
     {
