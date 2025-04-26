@@ -7,20 +7,17 @@ const QuizResults = ({quizAnswers}) => {
     const [movies, setMovies] = useState([]);
 
     useEffect(() => {
-    // const mockGenre = 35 ; //just to test call is working, will replace with actual useer input
-    const mockRuntime = 90
-    const mockVote = 7;
 
 // Set up parameters that match question filters
     const params = new URLSearchParams({
     api_key: API_KEY,
     with_genres: quizAnswers.genre, //Genres listed in number codes on TMDB
-    "with_runtime.gte": mockRuntime, //Runtime upper and lower limits
-    "with_runtime.lte": mockRuntime + 30,
-    "primary_release_date.gte": mockRelease, //Release date range
-    "primary_release_date.lte": mockRelease,
-    "vote_average.gte": mockVote, //Rating range (0-10 on TMDB)
-    "vote_average.lte": mockVote + 2
+    "with_runtime.gte": quizAnswers.runTime, //Runtime upper and lower limits
+    "with_runtime.lte": quizAnswers.filmReleaseDate + 30,
+    "primary_release_date.gte": quizAnswers.filmReleaseDate, //Release date range
+    "primary_release_date.lte": quizAnswers.filmReleaseDate + 30,
+    "with_origin_country": quizAnswers.countryOfOrigin,
+    "vote_average.gte": quizAnswers.ratingsRange //Rating range (0-10 on TMDB)
     });
 
     const url = `https://api.themoviedb.org/3/discover/movie?${params.toString()}`;
@@ -35,7 +32,6 @@ const QuizResults = ({quizAnswers}) => {
     //Randomly select one film to display from list of matching films
     const randomIndex = Math.floor(Math.random() * results.length); 
     const randomMovie = results[randomIndex];
-
     setMovies(randomMovie);
     };
 
@@ -44,10 +40,7 @@ fetchMovies();
 
 return (
     <div className="movie-card">
-        <h3>{movies.title}</h3>
-        <img src={`https://image.tmdb.org/t/p/w500/${movies.poster_path}`} alt={movies.title} />
-        <p>{movies.overview}</p>
-        <p>Release Date: {movies.release_date}</p>
+      <p>this will be the results</p>
     </div> //will add more to this, maybe runtime rating etc?
 )
 };

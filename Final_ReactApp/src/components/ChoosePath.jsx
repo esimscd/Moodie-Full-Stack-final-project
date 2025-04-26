@@ -11,7 +11,7 @@ function ChoosePath() {
   return (
     <>
       <div className="box">
-        <button onClick={() => handleClick("/Quiz")} className="path-button">
+        <button onClick={() => handleClick("/QuizFlow")} className="path-button">
           Quiz
         </button>
         <button
