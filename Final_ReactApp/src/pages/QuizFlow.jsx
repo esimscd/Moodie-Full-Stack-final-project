@@ -19,7 +19,6 @@ const QuizFlow = () => {
   return (
     <>
       <StartAgainNavbar/>
-      <h1>This is the Quiz page!</h1>
       <QuizQuestions quizAnswers ={quizAnswers} setQuizAnswers = {setQuizAnswers} setQuizComplete = {setQuizComplete}/>
       {quizComplete && (<QuizResults quizAnswers = {quizAnswers}/> )} 
       
