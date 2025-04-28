@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import "../styles/QuizQuestions.css";
+import QuizAnswerButton from "./QuizAnswerButton";
 
 const QuizQuestions = () => {
   // Utilise useState to manage the current question to to be displayed and the options for answers
@@ -78,12 +79,11 @@ const QuizQuestions = () => {
           {currentQuestion.options.map((option) => (
             // We will need to add a key to each of the buttons to ensure that React can identify them
             // We can also create button components to make it easier to manage
-            <button
+            <QuizAnswerButton
               key={option}
               onClick={() => handleAnswer(currentQuestion.id, option)}
-            >
-              {option}
-            </button>
+              quizAnswer={option}
+            />
           ))}
         </>
       ) : (
