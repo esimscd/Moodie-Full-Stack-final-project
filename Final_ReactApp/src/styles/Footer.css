@@ -2,7 +2,7 @@ footer {
     background: var(--deep-plum);
     color: var(--soft-beige);
     text-align: center;
-    padding: 1rem;
+    padding: 2.4rem;
     font-size: 0.9rem;
     display: flex;
     flex-direction: column;
