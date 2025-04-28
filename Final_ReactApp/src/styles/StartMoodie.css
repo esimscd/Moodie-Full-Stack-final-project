@@ -1,5 +1,7 @@
 body {
-  background-color: #1a1423;
+  background: linear-gradient(var(--dark-purple-black), var(--deep-plum));
+  width: 100vw;
+  height: 100vh;
 }
 
 h1 {
@@ -21,13 +23,14 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #b75d69;
   border: 2px solid #eacdc2;
   border-radius: 10px;
   padding: 1em;
 }
 
 .path-button:hover {
-  background-color: #eacdc2;
+  background-color: #774C60;
   color: #1a1423;
   cursor: pointer;
 }

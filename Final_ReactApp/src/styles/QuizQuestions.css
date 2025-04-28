@@ -3,7 +3,9 @@ h1 {
 }
 
 h2 {
-  color: #eacdc2;
+  color: #eacdc2;  
+  padding: 3rem;
+
 }
 
 .answers {
