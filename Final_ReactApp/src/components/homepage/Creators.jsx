@@ -24,7 +24,7 @@ const images = [
    { src: Lisa, title: "Action: Lisa Fury" },
    { src: Lizzie, title: "Comedy: Lizzie" },
    { src: Osayi, title: "Cartoon: Osayi" },
-   { src: Rima, title: "Lorem: Rima" },
+   { src: Rima, title: "Romance: Rima" },
 ];
 
 const Creators = () => {

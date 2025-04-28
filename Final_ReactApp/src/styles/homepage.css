@@ -60,11 +60,13 @@
 }
 
 .left-container > img {
-   height: 330px;
+   width: 100%;    
+   height: auto;    
 }
 
 .right-container > img {
-   height: 425px;
+   width: 100%;   
+   height: auto;     
 }
 
 .about-container,
