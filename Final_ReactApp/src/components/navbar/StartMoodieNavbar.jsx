@@ -6,26 +6,24 @@ import '../../styles/navbar.css';
 
 const StartMoodieNavbar = () => {
    return (
-      <>
-               <div className="nav-container">
-                  <Link to="/">
-                     <img id="moodie-logo" src={moodieLogo} />
-                  </Link>
-                  <nav>
-                     <ul>
-                        <li>
-                           <Link to="/">Home</Link>
-                        </li>
-                        <li>
-                           <Link to="/about">About</Link>
-                        </li>
-                        <li>
-                           <Link to="/thecreators">The Creators</Link>
-                        </li>
-                     </ul>
-                  </nav>
-               </div>
-            </>
+      <div className="nav-container">
+         <Link to="/" className="logo-link">
+            <img id="moodie-logo" src={moodieLogo} alt="Moodie Logo" />
+         </Link>
+         <nav>
+            <ul>
+               <li>
+                  <Link to="/#hero-section" className="nav-link">Home</Link>
+               </li>
+               <li>
+                  <Link to="/#about-section" className="nav-link">About</Link>
+               </li>
+               <li>
+                  <Link to="/#creators-section" className="nav-link">The Creators</Link>
+               </li>
+            </ul>
+         </nav>
+      </div>
    );
 };
 
