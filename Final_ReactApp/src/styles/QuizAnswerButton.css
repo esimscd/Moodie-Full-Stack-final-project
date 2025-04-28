@@ -1,0 +1,23 @@
+.quiz-answer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.quiz-answer-button:hover {
+  background-color: var(--soft-beige);
+  color: var(--deep-plum);
+}
+.quiz-answer-button {
+  flex: 0 1 45%;
+  background-color: var(--deep-plum);
+  color: var(--soft-beige);
+  border: none;
+  border-radius: 8px;
+  padding: 20px 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
