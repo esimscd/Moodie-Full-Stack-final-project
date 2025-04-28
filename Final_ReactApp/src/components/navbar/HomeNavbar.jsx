@@ -8,33 +8,71 @@ const HomeNavbar = () => {
    const navigate = useNavigate();
 
    const startMoodie = () => {
-      navigate("/startmoodie"); // This takes the user to the Start Moodie page when they press the button
+      navigate("/startmoodie");
    };
+
+   const scrollToSection = (id) => {
+      const element = document.getElementById(id);
+      if (element) {
+         const yOffset = -95; // Navbar height
+         const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+         window.scrollTo({ top: y, behavior: "smooth" });
+      }
+   };
+
    return (
-      <>
-         <div className="nav-container">
-            <Link to="/">
-               <img id="moodie-logo" src={moodieLogo} />
-            </Link>
-            <nav>
-               <ul>
-                  <li>
-                     <Link to="/">Home</Link>
-                  </li>
-                  <li>
-                     <Link to="/about">About</Link>
-                  </li>
-                  <li>
-                     <Link to="/thecreators">The Creators</Link>
-                  </li>
+      <div className="nav-container">
+      <Link to="/" className="logo-link">
+            <img id="moodie-logo" src={moodieLogo} alt="Moodie Logo" />
+         </Link>
+         <nav>
+            <ul>
+               <li>
+                  <Link
+                     to="/"
+                     onClick={(e) => {
+                        e.preventDefault();
+                        scrollToSection("hero-section");
+                     }}
+                     className="nav-link"
+                  >
+                     Home
+                  </Link>
+               </li>
+               <li>
+                  <Link
+                     to="/"
+                     onClick={(e) => {
+                        e.preventDefault();
+                        scrollToSection("about-section");
+                     }}
+                     className="nav-link"
+                  >
+                     About
+                  </Link>
+               </li>
+               <li>
+                  <Link
+                     to="/"
+                     onClick={(e) => {
+                        e.preventDefault();
+                        scrollToSection("creators-section");
+                     }}
+                     className="nav-link"
+                  >
+                     The Creators
+                  </Link>
+               </li>
+               <li>
                   <button id="start-moodie-btn" onClick={startMoodie}>
                      Start Moodie
                   </button>
-               </ul>
-            </nav>
-         </div>
-      </>
+               </li>
+            </ul>
+         </nav>
+      </div>
    );
 };
+
 
 export default HomeNavbar;
