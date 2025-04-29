@@ -19,13 +19,13 @@ const StartAgainNavbar = () => {
             <nav>
                <ul>
                   <li>
-                     <Link to="/">Home</Link>
+                     <Link to="/#hero-section">Home</Link>
                   </li>
                   <li>
-                     <Link to="/about">About</Link>
+                     <Link to="/#about-section">About</Link>
                   </li>
                   <li>
-                     <Link to="/thecreators">The Creators</Link>
+                     <Link to="/#creators-section">The Creators</Link>
                   </li>
                   <button id="start-moodie-btn" onClick={startMoodie}>
                      Start Again
