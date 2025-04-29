@@ -23,7 +23,7 @@ function ChoosePath() {
             onClick={() => handleClick("/Randomise")}
             className="randomise-button"
           >
-            Randomise
+            Random Movie Generator
           </button>
         </div>
       </div>
