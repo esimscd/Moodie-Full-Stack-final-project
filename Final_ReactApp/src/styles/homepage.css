@@ -39,7 +39,7 @@
 
 .hero-container {
    width: 100vw;
-   height: calc(100vh - 95px);
+   height: 100vh;
    background: linear-gradient(
       var(--muted-mauve),
       var(--deep-plum),
@@ -59,12 +59,38 @@
    font-weight: 500;
 }
 
+@media only screen and (max-width: 1024px){
+   .hero-slogan {
+      font-size: 1.3rem;
+      font-weight: 500;
+   }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1194px){
+   .hero-slogan {
+      font-size: 1.8rem;
+      font-weight: 500;
+   }
+}
+
 .left-container > img {
-   height: 330px;
+   /* height: 330px; */
+   width: 100%;
 }
 
 .right-container > img {
-   height: 425px;
+   /* height: 425px; */
+   width: 100%;
+}
+
+.left-container {
+   width: 50%;
+   max-width: 950px;
+}
+
+.right-container {
+   width: 30%;
+   max-width: 650px;
 }
 
 .about-container,
