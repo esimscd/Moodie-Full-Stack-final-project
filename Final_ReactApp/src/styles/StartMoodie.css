@@ -1,5 +1,6 @@
 body {
   background: linear-gradient(var(--dark-purple-black), var(--deep-plum));
+  height: 100vh;
 }
 
 h1 {
@@ -33,7 +34,8 @@ h1 {
   justify-content: center;
   align-items: center;
   background-color: var(--vintage-rose);
-  border: 2px solid var(--soft-beige);
+  color: var(--dark-purple-black);
+  border: 2px solid var(--dark-purple-black);
   border-radius: 10px;
   padding: 2em;
   font-size: 30px;
@@ -48,5 +50,6 @@ h1 {
 .randomise-button:hover {
   background-color: var(--deep-plum);
   color:  var(--soft-beige);
+  border: 2px solid var(--soft-beige);
   cursor: pointer;
 }
