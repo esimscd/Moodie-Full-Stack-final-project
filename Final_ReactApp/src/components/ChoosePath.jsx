@@ -17,7 +17,7 @@ function ChoosePath() {
             onClick={() => handleClick("/QuizFlow")}
             className="quiz-button"
           >
-            Quiz
+          Moodie Quiz
           </button>
           <button
             onClick={() => handleClick("/Randomise")}
