@@ -184,6 +184,11 @@
    border-radius: 10px;
    padding: 0;
    margin: 0;
+   transition: all 0.4s ease;
+
+   &:hover{
+      box-shadow: 0 0 45px 20px #a273b0;
+   }
 }
 
 .cards {
@@ -195,10 +200,12 @@
    aspect-ratio: 9/11;
    border: 2px solid var(--dark-purple-black);
    transition: all 0.3s ease;
+   cursor: pointer;
    
    &:hover {
       background: #784258;
       border: 1px solid var(--soft-beige);
+      
    }
 }
 
