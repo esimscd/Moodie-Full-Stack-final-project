@@ -6,33 +6,33 @@ import Lizzie from "../../assets/TeamAvatars/Lizzie.png";
 import Osayi from "../../assets/TeamAvatars/Osayi.png";
 import Rima from "../../assets/TeamAvatars/Rima.png";
 // import Carousel from "react-multi-carousel";
-import { Carousel } from 'primereact/carousel';
+import { Carousel } from "primereact/carousel";
 import "react-multi-carousel/lib/styles.css";
 import "../../styles/homepage.css";
 
 const responsive = [
    {
-      breakpoint: '3000px',
+      breakpoint: "3000px",
       numVisible: 5,
       numScroll: 1,
    },
    {
-      breakpoint: '2000px',
+      breakpoint: "2000px",
       numVisible: 4,
       numScroll: 1,
    },
    {
-      breakpoint: '1024px',
+      breakpoint: "1024px",
       numVisible: 3,
       numScroll: 1,
    },
    {
-      breakpoint: '728px',
+      breakpoint: "728px",
       numVisible: 2,
       numScroll: 1,
    },
    {
-      breakpoint: '464px',
+      breakpoint: "464px",
       numVisible: 1,
       numScroll: 1,
    },
@@ -61,10 +61,12 @@ const itemTemplate = (item) => (
 const AvatarCarousel = () => {
    return (
       <>
-         <Carousel 
-            value={images} 
-            itemTemplate={itemTemplate} 
+         <Carousel
+            value={images}
+            itemTemplate={itemTemplate}
             responsiveOptions={responsive}
+            autoplayInterval={4000} 
+            circular
          />
       </>
    );
