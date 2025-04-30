@@ -1,0 +1,2252 @@
+[
+  {
+    "answers": {
+      "genre": {
+        "label": "Fantasy",
+        "value": 14
+      },
+      "filmReleaseDate": {
+        "label": "Fantasy",
+        "value": 14
+      },
+      "ratingsRange": {
+        "label": "Fantasy",
+        "value": 14
+      },
+      "runTime": {
+        "label": "Fantasy",
+        "value": 14
+      }
+    },
+    "apiRequest": {
+      "with_genres": 14,
+      "vote_average.gte": 14,
+      "with_runtime.gte": 14
+    }
+  },
+  {
+    "answers": {
+      "genre": {
+        "label": "Fantasy",
+        "value": 14
+      },
+      "filmReleaseDate": {
+        "label": "Fantasy",
+        "value": 14
+      },
+      "ratingsRange": {
+        "label": "Fantasy",
+        "value": 14
+      },
+      "runTime": {
+        "label": "Comedy",
+        "value": 35
+      }
+    },
+    "apiRequest": {
+      "with_genres": 14,
+      "vote_average.gte": 14,
+      "with_runtime.gte": 35
+    }
+  },
+  {
+    "answers": {
+      "genre": {
+        "label": "Fantasy",
+        "value": 14
+      },
+      "filmReleaseDate": {
+        "label": "Fantasy",
+        "value": 14
+      },
+      "ratingsRange": {
+        "label": "Comedy",
+        "value": 35
+      },
+      "runTime": {
+        "label": "Fantasy",
+        "value": 14
+      }
+    },
+    "apiRequest": {
+      "with_genres": 14,
+      "vote_average.gte": 35,
+      "with_runtime.gte": 14
+    }
+  },
+  {
+    "answers": {
+      "genre": {
+        "label": "Fantasy",
+        "value": 14
+      },
+      "filmReleaseDate": {
+        "label": "Fantasy",
+        "value": 14
+      },
+      "ratingsRange": {
+        "label": "Comedy",
+        "value": 35
+      },
+      "runTime": {
+        "label": "Comedy",
+        "value": 35
+      }
+    },
+    "apiRequest": {
+      "with_genres": 14,
+      "vote_average.gte": 35,
+      "with_runtime.gte": 35
+    }
+  },
+  {
+    "answers": {
+      "genre": {
+        "label": "Fantasy",
+        "value": 14
+      },
+      "filmReleaseDate": {
+        "label": "Fantasy",
+        "value": 14
+      },
+      "ratingsRange": {
+        "label": "Horror",
+        "value": 27
+      },
+      "runTime": {
+        "label": "Fantasy",
+        "value": 14
+      }
+    },
+    "apiRequest": {
+      "with_genres": 14,
+      "vote_average.gte": 27,
+      "with_runtime.gte": 14
+    }
+  },
+  {
+    "answers": {
+      "genre": {
+        "label": "Fantasy",
+        "value": 14
+      },
+      "filmReleaseDate": {
+        "label": "Fantasy",
+        "value": 14
+      },
+      "ratingsRange": {
+        "label": "Horror",
+        "value": 27
+      },
+      "runTime": {
+        "label": "Comedy",
+        "value": 35
+      }
+    },
+    "apiRequest": {
+      "with_genres": 14,
+      "vote_average.gte": 27,
+      "with_runtime.gte": 35
+    }
+  },
+  {
+    "answers": {
+      "genre": {
+        "label": "Fantasy",
+        "value": 14
+      },
+      "filmReleaseDate": {
+        "label": "Comedy",
+        "value": 35
+      },
+      "ratingsRange": {
+        "label": "Fantasy",
+        "value": 14
+      },
+      "runTime": {
+        "label": "Fantasy",
+        "value": 14
+      }
+    },
+    "apiRequest": {
+      "with_genres": 14,
+      "vote_average.gte": 14,
+      "with_runtime.gte": 14
+    }
+  },
+  {
+    "answers": {
+      "genre": {
+        "label": "Fantasy",
+        "value": 14
+      },
+      "filmReleaseDate": {
+        "label": "Comedy",
+        "value": 35
+      },
+      "ratingsRange": {
+        "label": "Fantasy",
+        "value": 14
+      },
+      "runTime": {
+        "label": "Comedy",
+        "value": 35
+      }
+    },
+    "apiRequest": {
+      "with_genres": 14,
+      "vote_average.gte": 14,
+      "with_runtime.gte": 35
+    }
+  },
+  {
+    "answers": {
+      "genre": {
+        "label": "Fantasy",
+        "value": 14
+      },
+      "filmReleaseDate": {
+        "label": "Comedy",
+        "value": 35
+      },
+      "ratingsRange": {
+        "label": "Comedy",
+        "value": 35
+      },
+      "runTime": {
+        "label": "Fantasy",
+        "value": 14
+      }
+    },
+    "apiRequest": {
+      "with_genres": 14,
+      "vote_average.gte": 35,
+      "with_runtime.gte": 14
+    }
+  },
+  {
+    "answers": {
+      "genre": {
+        "label": "Fantasy",
+        "value": 14
+      },
+      "filmReleaseDate": {
+        "label": "Comedy",
+        "value": 35
+      },
+      "ratingsRange": {
+        "label": "Comedy",
+        "value": 35
+      },
+      "runTime": {
+        "label": "Comedy",
+        "value": 35
+      }
+    },
+    "apiRequest": {
+      "with_genres": 14,
+      "vote_average.gte": 35,
+      "with_runtime.gte": 35
+    }
+  },
+  {
+    "answers": {
+      "genre": {
+        "label": "Fantasy",
+        "value": 14
+      },
+      "filmReleaseDate": {
+        "label": "Comedy",
+        "value": 35
+      },
+      "ratingsRange": {
+        "label": "Horror",
+        "value": 27
+      },
+      "runTime": {
+        "label": "Fantasy",
+        "value": 14
+      }
+    },
+    "apiRequest": {
+      "with_genres": 14,
+      "vote_average.gte": 27,
+      "with_runtime.gte": 14
+    }
+  },
+  {
+    "answers": {
+      "genre": {
+        "label": "Fantasy",
+        "value": 14
+      },
+      "filmReleaseDate": {
+        "label": "Comedy",
+        "value": 35
+      },
+      "ratingsRange": {
+        "label": "Horror",
+        "value": 27
+      },
+      "runTime": {
+        "label": "Comedy",
+        "value": 35
+      }
+    },
+    "apiRequest": {
+      "with_genres": 14,
+      "vote_average.gte": 27,
+      "with_runtime.gte": 35
+    }
+  },
+  {
+    "answers": {
+      "genre": {
+        "label": "Fantasy",
+        "value": 14
+      },
+      "filmReleaseDate": {
+        "label": "Horror",
+        "value": 27
+      },
+      "ratingsRange": {
+        "label": "Fantasy",
+        "value": 14
+      },
+      "runTime": {
+        "label": "Fantasy",
+        "value": 14
+      }
+    },
+    "apiRequest": {
+      "with_genres": 14,
+      "vote_average.gte": 14,
+      "with_runtime.gte": 14
+    }
+  },
+  {
+    "answers": {
+      "genre": {
+        "label": "Fantasy",
+        "value": 14
+      },
+      "filmReleaseDate": {
+        "label": "Horror",
+        "value": 27
+      },
+      "ratingsRange": {
+        "label": "Fantasy",
+        "value": 14
+      },
+      "runTime": {
+        "label": "Comedy",
+        "value": 35
+      }
+    },
+    "apiRequest": {
+      "with_genres": 14,
+      "vote_average.gte": 14,
+      "with_runtime.gte": 35
+    }
+  },
+  {
+    "answers": {
+      "genre": {
+        "label": "Fantasy",
+        "value": 14
+      },
+      "filmReleaseDate": {
+        "label": "Horror",
+        "value": 27
+      },
+      "ratingsRange": {
+        "label": "Comedy",
+        "value": 35
+      },
+      "runTime": {
+        "label": "Fantasy",
+        "value": 14
+      }
+    },
+    "apiRequest": {
+      "with_genres": 14,
+      "vote_average.gte": 35,
+      "with_runtime.gte": 14
+    }
+  },
+  {
+    "answers": {
+      "genre": {
+        "label": "Fantasy",
+        "value": 14
+      },
+      "filmReleaseDate": {
+        "label": "Horror",
+        "value": 27
+      },
+      "ratingsRange": {
+        "label": "Comedy",
+        "value": 35
+      },
+      "runTime": {
+        "label": "Comedy",
+        "value": 35
+      }
+    },
+    "apiRequest": {
+      "with_genres": 14,
+      "vote_average.gte": 35,
+      "with_runtime.gte": 35
+    }
+  },
+  {
+    "answers": {
+      "genre": {
+        "label": "Fantasy",
+        "value": 14
+      },
+      "filmReleaseDate": {
+        "label": "Horror",
+        "value": 27
+      },
+      "ratingsRange": {
+        "label": "Horror",
+        "value": 27
+      },
+      "runTime": {
+        "label": "Fantasy",
+        "value": 14
+      }
+    },
+    "apiRequest": {
+      "with_genres": 14,
+      "vote_average.gte": 27,
+      "with_runtime.gte": 14
+    }
+  },
+  {
+    "answers": {
+      "genre": {
+        "label": "Fantasy",
+        "value": 14
+      },
+      "filmReleaseDate": {
+        "label": "Horror",
+        "value": 27
+      },
+      "ratingsRange": {
+        "label": "Horror",
+        "value": 27
+      },
+      "runTime": {
+        "label": "Comedy",
+        "value": 35
+      }
+    },
+    "apiRequest": {
+      "with_genres": 14,
+      "vote_average.gte": 27,
+      "with_runtime.gte": 35
+    }
+  },
+  {
+    "answers": {
+      "genre": {
+        "label": "Comedy",
+        "value": 35
+      },
+      "filmReleaseDate": {
+        "label": "Fantasy",
+        "value": 14
+      },
+      "ratingsRange": {
+        "label": "Fantasy",
+        "value": 14
+      },
+      "runTime": {
+        "label": "Fantasy",
+        "value": 14
+      }
+    },
+    "apiRequest": {
+      "with_genres": 35,
+      "vote_average.gte": 14,
+      "with_runtime.gte": 14
+    }
+  },
+  {
+    "answers": {
+      "genre": {
+        "label": "Comedy",
+        "value": 35
+      },
+      "filmReleaseDate": {
+        "label": "Fantasy",
+        "value": 14
+      },
+      "ratingsRange": {
+        "label": "Fantasy",
+        "value": 14
+      },
+      "runTime": {
+        "label": "Comedy",
+        "value": 35
+      }
+    },
+    "apiRequest": {
+      "with_genres": 35,
+      "vote_average.gte": 14,
+      "with_runtime.gte": 35
+    }
+  },
+  {
+    "answers": {
+      "genre": {
+        "label": "Comedy",
+        "value": 35
+      },
+      "filmReleaseDate": {
+        "label": "Fantasy",
+        "value": 14
+      },
+      "ratingsRange": {
+        "label": "Comedy",
+        "value": 35
+      },
+      "runTime": {
+        "label": "Fantasy",
+        "value": 14
+      }
+    },
+    "apiRequest": {
+      "with_genres": 35,
+      "vote_average.gte": 35,
+      "with_runtime.gte": 14
+    }
+  },
+  {
+    "answers": {
+      "genre": {
+        "label": "Comedy",
+        "value": 35
+      },
+      "filmReleaseDate": {
+        "label": "Fantasy",
+        "value": 14
+      },
+      "ratingsRange": {
+        "label": "Comedy",
+        "value": 35
+      },
+      "runTime": {
+        "label": "Comedy",
+        "value": 35
+      }
+    },
+    "apiRequest": {
+      "with_genres": 35,
+      "vote_average.gte": 35,
+      "with_runtime.gte": 35
+    }
+  },
+  {
+    "answers": {
+      "genre": {
+        "label": "Comedy",
+        "value": 35
+      },
+      "filmReleaseDate": {
+        "label": "Fantasy",
+        "value": 14
+      },
+      "ratingsRange": {
+        "label": "Horror",
+        "value": 27
+      },
+      "runTime": {
+        "label": "Fantasy",
+        "value": 14
+      }
+    },
+    "apiRequest": {
+      "with_genres": 35,
+      "vote_average.gte": 27,
+      "with_runtime.gte": 14
+    }
+  },
+  {
+    "answers": {
+      "genre": {
+        "label": "Comedy",
+        "value": 35
+      },
+      "filmReleaseDate": {
+        "label": "Fantasy",
+        "value": 14
+      },
+      "ratingsRange": {
+        "label": "Horror",
+        "value": 27
+      },
+      "runTime": {
+        "label": "Comedy",
+        "value": 35
+      }
+    },
+    "apiRequest": {
+      "with_genres": 35,
+      "vote_average.gte": 27,
+      "with_runtime.gte": 35
+    }
+  },
+  {
+    "answers": {
+      "genre": {
+        "label": "Comedy",
+        "value": 35
+      },
+      "filmReleaseDate": {
+        "label": "Comedy",
+        "value": 35
+      },
+      "ratingsRange": {
+        "label": "Fantasy",
+        "value": 14
+      },
+      "runTime": {
+        "label": "Fantasy",
+        "value": 14
+      }
+    },
+    "apiRequest": {
+      "with_genres": 35,
+      "vote_average.gte": 14,
+      "with_runtime.gte": 14
+    }
+  },
+  {
+    "answers": {
+      "genre": {
+        "label": "Comedy",
+        "value": 35
+      },
+      "filmReleaseDate": {
+        "label": "Comedy",
+        "value": 35
+      },
+      "ratingsRange": {
+        "label": "Fantasy",
+        "value": 14
+      },
+      "runTime": {
+        "label": "Comedy",
+        "value": 35
+      }
+    },
+    "apiRequest": {
+      "with_genres": 35,
+      "vote_average.gte": 14,
+      "with_runtime.gte": 35
+    }
+  },
+  {
+    "answers": {
+      "genre": {
+        "label": "Comedy",
+        "value": 35
+      },
+      "filmReleaseDate": {
+        "label": "Comedy",
+        "value": 35
+      },
+      "ratingsRange": {
+        "label": "Comedy",
+        "value": 35
+      },
+      "runTime": {
+        "label": "Fantasy",
+        "value": 14
+      }
+    },
+    "apiRequest": {
+      "with_genres": 35,
+      "vote_average.gte": 35,
+      "with_runtime.gte": 14
+    }
+  },
+  {
+    "answers": {
+      "genre": {
+        "label": "Comedy",
+        "value": 35
+      },
+      "filmReleaseDate": {
+        "label": "Comedy",
+        "value": 35
+      },
+      "ratingsRange": {
+        "label": "Comedy",
+        "value": 35
+      },
+      "runTime": {
+        "label": "Comedy",
+        "value": 35
+      }
+    },
+    "apiRequest": {
+      "with_genres": 35,
+      "vote_average.gte": 35,
+      "with_runtime.gte": 35
+    }
+  },
+  {
+    "answers": {
+      "genre": {
+        "label": "Comedy",
+        "value": 35
+      },
+      "filmReleaseDate": {
+        "label": "Comedy",
+        "value": 35
+      },
+      "ratingsRange": {
+        "label": "Horror",
+        "value": 27
+      },
+      "runTime": {
+        "label": "Fantasy",
+        "value": 14
+      }
+    },
+    "apiRequest": {
+      "with_genres": 35,
+      "vote_average.gte": 27,
+      "with_runtime.gte": 14
+    }
+  },
+  {
+    "answers": {
+      "genre": {
+        "label": "Comedy",
+        "value": 35
+      },
+      "filmReleaseDate": {
+        "label": "Comedy",
+        "value": 35
+      },
+      "ratingsRange": {
+        "label": "Horror",
+        "value": 27
+      },
+      "runTime": {
+        "label": "Comedy",
+        "value": 35
+      }
+    },
+    "apiRequest": {
+      "with_genres": 35,
+      "vote_average.gte": 27,
+      "with_runtime.gte": 35
+    }
+  },
+  {
+    "answers": {
+      "genre": {
+        "label": "Comedy",
+        "value": 35
+      },
+      "filmReleaseDate": {
+        "label": "Horror",
+        "value": 27
+      },
+      "ratingsRange": {
+        "label": "Fantasy",
+        "value": 14
+      },
+      "runTime": {
+        "label": "Fantasy",
+        "value": 14
+      }
+    },
+    "apiRequest": {
+      "with_genres": 35,
+      "vote_average.gte": 14,
+      "with_runtime.gte": 14
+    }
+  },
+  {
+    "answers": {
+      "genre": {
+        "label": "Comedy",
+        "value": 35
+      },
+      "filmReleaseDate": {
+        "label": "Horror",
+        "value": 27
+      },
+      "ratingsRange": {
+        "label": "Fantasy",
+        "value": 14
+      },
+      "runTime": {
+        "label": "Comedy",
+        "value": 35
+      }
+    },
+    "apiRequest": {
+      "with_genres": 35,
+      "vote_average.gte": 14,
+      "with_runtime.gte": 35
+    }
+  },
+  {
+    "answers": {
+      "genre": {
+        "label": "Comedy",
+        "value": 35
+      },
+      "filmReleaseDate": {
+        "label": "Horror",
+        "value": 27
+      },
+      "ratingsRange": {
+        "label": "Comedy",
+        "value": 35
+      },
+      "runTime": {
+        "label": "Fantasy",
+        "value": 14
+      }
+    },
+    "apiRequest": {
+      "with_genres": 35,
+      "vote_average.gte": 35,
+      "with_runtime.gte": 14
+    }
+  },
+  {
+    "answers": {
+      "genre": {
+        "label": "Comedy",
+        "value": 35
+      },
+      "filmReleaseDate": {
+        "label": "Horror",
+        "value": 27
+      },
+      "ratingsRange": {
+        "label": "Comedy",
+        "value": 35
+      },
+      "runTime": {
+        "label": "Comedy",
+        "value": 35
+      }
+    },
+    "apiRequest": {
+      "with_genres": 35,
+      "vote_average.gte": 35,
+      "with_runtime.gte": 35
+    }
+  },
+  {
+    "answers": {
+      "genre": {
+        "label": "Comedy",
+        "value": 35
+      },
+      "filmReleaseDate": {
+        "label": "Horror",
+        "value": 27
+      },
+      "ratingsRange": {
+        "label": "Horror",
+        "value": 27
+      },
+      "runTime": {
+        "label": "Fantasy",
+        "value": 14
+      }
+    },
+    "apiRequest": {
+      "with_genres": 35,
+      "vote_average.gte": 27,
+      "with_runtime.gte": 14
+    }
+  },
+  {
+    "answers": {
+      "genre": {
+        "label": "Comedy",
+        "value": 35
+      },
+      "filmReleaseDate": {
+        "label": "Horror",
+        "value": 27
+      },
+      "ratingsRange": {
+        "label": "Horror",
+        "value": 27
+      },
+      "runTime": {
+        "label": "Comedy",
+        "value": 35
+      }
+    },
+    "apiRequest": {
+      "with_genres": 35,
+      "vote_average.gte": 27,
+      "with_runtime.gte": 35
+    }
+  },
+  {
+    "answers": {
+      "genre": {
+        "label": "Horror",
+        "value": 27
+      },
+      "filmReleaseDate": {
+        "label": "Fantasy",
+        "value": 14
+      },
+      "ratingsRange": {
+        "label": "Fantasy",
+        "value": 14
+      },
+      "runTime": {
+        "label": "Fantasy",
+        "value": 14
+      }
+    },
+    "apiRequest": {
+      "with_genres": 27,
+      "vote_average.gte": 14,
+      "with_runtime.gte": 14
+    }
+  },
+  {
+    "answers": {
+      "genre": {
+        "label": "Horror",
+        "value": 27
+      },
+      "filmReleaseDate": {
+        "label": "Fantasy",
+        "value": 14
+      },
+      "ratingsRange": {
+        "label": "Fantasy",
+        "value": 14
+      },
+      "runTime": {
+        "label": "Comedy",
+        "value": 35
+      }
+    },
+    "apiRequest": {
+      "with_genres": 27,
+      "vote_average.gte": 14,
+      "with_runtime.gte": 35
+    }
+  },
+  {
+    "answers": {
+      "genre": {
+        "label": "Horror",
+        "value": 27
+      },
+      "filmReleaseDate": {
+        "label": "Fantasy",
+        "value": 14
+      },
+      "ratingsRange": {
+        "label": "Comedy",
+        "value": 35
+      },
+      "runTime": {
+        "label": "Fantasy",
+        "value": 14
+      }
+    },
+    "apiRequest": {
+      "with_genres": 27,
+      "vote_average.gte": 35,
+      "with_runtime.gte": 14
+    }
+  },
+  {
+    "answers": {
+      "genre": {
+        "label": "Horror",
+        "value": 27
+      },
+      "filmReleaseDate": {
+        "label": "Fantasy",
+        "value": 14
+      },
+      "ratingsRange": {
+        "label": "Comedy",
+        "value": 35
+      },
+      "runTime": {
+        "label": "Comedy",
+        "value": 35
+      }
+    },
+    "apiRequest": {
+      "with_genres": 27,
+      "vote_average.gte": 35,
+      "with_runtime.gte": 35
+    }
+  },
+  {
+    "answers": {
+      "genre": {
+        "label": "Horror",
+        "value": 27
+      },
+      "filmReleaseDate": {
+        "label": "Fantasy",
+        "value": 14
+      },
+      "ratingsRange": {
+        "label": "Horror",
+        "value": 27
+      },
+      "runTime": {
+        "label": "Fantasy",
+        "value": 14
+      }
+    },
+    "apiRequest": {
+      "with_genres": 27,
+      "vote_average.gte": 27,
+      "with_runtime.gte": 14
+    }
+  },
+  {
+    "answers": {
+      "genre": {
+        "label": "Horror",
+        "value": 27
+      },
+      "filmReleaseDate": {
+        "label": "Fantasy",
+        "value": 14
+      },
+      "ratingsRange": {
+        "label": "Horror",
+        "value": 27
+      },
+      "runTime": {
+        "label": "Comedy",
+        "value": 35
+      }
+    },
+    "apiRequest": {
+      "with_genres": 27,
+      "vote_average.gte": 27,
+      "with_runtime.gte": 35
+    }
+  },
+  {
+    "answers": {
+      "genre": {
+        "label": "Horror",
+        "value": 27
+      },
+      "filmReleaseDate": {
+        "label": "Comedy",
+        "value": 35
+      },
+      "ratingsRange": {
+        "label": "Fantasy",
+        "value": 14
+      },
+      "runTime": {
+        "label": "Fantasy",
+        "value": 14
+      }
+    },
+    "apiRequest": {
+      "with_genres": 27,
+      "vote_average.gte": 14,
+      "with_runtime.gte": 14
+    }
+  },
+  {
+    "answers": {
+      "genre": {
+        "label": "Horror",
+        "value": 27
+      },
+      "filmReleaseDate": {
+        "label": "Comedy",
+        "value": 35
+      },
+      "ratingsRange": {
+        "label": "Fantasy",
+        "value": 14
+      },
+      "runTime": {
+        "label": "Comedy",
+        "value": 35
+      }
+    },
+    "apiRequest": {
+      "with_genres": 27,
+      "vote_average.gte": 14,
+      "with_runtime.gte": 35
+    }
+  },
+  {
+    "answers": {
+      "genre": {
+        "label": "Horror",
+        "value": 27
+      },
+      "filmReleaseDate": {
+        "label": "Comedy",
+        "value": 35
+      },
+      "ratingsRange": {
+        "label": "Comedy",
+        "value": 35
+      },
+      "runTime": {
+        "label": "Fantasy",
+        "value": 14
+      }
+    },
+    "apiRequest": {
+      "with_genres": 27,
+      "vote_average.gte": 35,
+      "with_runtime.gte": 14
+    }
+  },
+  {
+    "answers": {
+      "genre": {
+        "label": "Horror",
+        "value": 27
+      },
+      "filmReleaseDate": {
+        "label": "Comedy",
+        "value": 35
+      },
+      "ratingsRange": {
+        "label": "Comedy",
+        "value": 35
+      },
+      "runTime": {
+        "label": "Comedy",
+        "value": 35
+      }
+    },
+    "apiRequest": {
+      "with_genres": 27,
+      "vote_average.gte": 35,
+      "with_runtime.gte": 35
+    }
+  },
+  {
+    "answers": {
+      "genre": {
+        "label": "Horror",
+        "value": 27
+      },
+      "filmReleaseDate": {
+        "label": "Comedy",
+        "value": 35
+      },
+      "ratingsRange": {
+        "label": "Horror",
+        "value": 27
+      },
+      "runTime": {
+        "label": "Fantasy",
+        "value": 14
+      }
+    },
+    "apiRequest": {
+      "with_genres": 27,
+      "vote_average.gte": 27,
+      "with_runtime.gte": 14
+    }
+  },
+  {
+    "answers": {
+      "genre": {
+        "label": "Horror",
+        "value": 27
+      },
+      "filmReleaseDate": {
+        "label": "Comedy",
+        "value": 35
+      },
+      "ratingsRange": {
+        "label": "Horror",
+        "value": 27
+      },
+      "runTime": {
+        "label": "Comedy",
+        "value": 35
+      }
+    },
+    "apiRequest": {
+      "with_genres": 27,
+      "vote_average.gte": 27,
+      "with_runtime.gte": 35
+    }
+  },
+  {
+    "answers": {
+      "genre": {
+        "label": "Horror",
+        "value": 27
+      },
+      "filmReleaseDate": {
+        "label": "Horror",
+        "value": 27
+      },
+      "ratingsRange": {
+        "label": "Fantasy",
+        "value": 14
+      },
+      "runTime": {
+        "label": "Fantasy",
+        "value": 14
+      }
+    },
+    "apiRequest": {
+      "with_genres": 27,
+      "vote_average.gte": 14,
+      "with_runtime.gte": 14
+    }
+  },
+  {
+    "answers": {
+      "genre": {
+        "label": "Horror",
+        "value": 27
+      },
+      "filmReleaseDate": {
+        "label": "Horror",
+        "value": 27
+      },
+      "ratingsRange": {
+        "label": "Fantasy",
+        "value": 14
+      },
+      "runTime": {
+        "label": "Comedy",
+        "value": 35
+      }
+    },
+    "apiRequest": {
+      "with_genres": 27,
+      "vote_average.gte": 14,
+      "with_runtime.gte": 35
+    }
+  },
+  {
+    "answers": {
+      "genre": {
+        "label": "Horror",
+        "value": 27
+      },
+      "filmReleaseDate": {
+        "label": "Horror",
+        "value": 27
+      },
+      "ratingsRange": {
+        "label": "Comedy",
+        "value": 35
+      },
+      "runTime": {
+        "label": "Fantasy",
+        "value": 14
+      }
+    },
+    "apiRequest": {
+      "with_genres": 27,
+      "vote_average.gte": 35,
+      "with_runtime.gte": 14
+    }
+  },
+  {
+    "answers": {
+      "genre": {
+        "label": "Horror",
+        "value": 27
+      },
+      "filmReleaseDate": {
+        "label": "Horror",
+        "value": 27
+      },
+      "ratingsRange": {
+        "label": "Comedy",
+        "value": 35
+      },
+      "runTime": {
+        "label": "Comedy",
+        "value": 35
+      }
+    },
+    "apiRequest": {
+      "with_genres": 27,
+      "vote_average.gte": 35,
+      "with_runtime.gte": 35
+    }
+  },
+  {
+    "answers": {
+      "genre": {
+        "label": "Horror",
+        "value": 27
+      },
+      "filmReleaseDate": {
+        "label": "Horror",
+        "value": 27
+      },
+      "ratingsRange": {
+        "label": "Horror",
+        "value": 27
+      },
+      "runTime": {
+        "label": "Fantasy",
+        "value": 14
+      }
+    },
+    "apiRequest": {
+      "with_genres": 27,
+      "vote_average.gte": 27,
+      "with_runtime.gte": 14
+    }
+  },
+  {
+    "answers": {
+      "genre": {
+        "label": "Horror",
+        "value": 27
+      },
+      "filmReleaseDate": {
+        "label": "Horror",
+        "value": 27
+      },
+      "ratingsRange": {
+        "label": "Horror",
+        "value": 27
+      },
+      "runTime": {
+        "label": "Comedy",
+        "value": 35
+      }
+    },
+    "apiRequest": {
+      "with_genres": 27,
+      "vote_average.gte": 27,
+      "with_runtime.gte": 35
+    }
+  },
+  {
+    "answers": {
+      "genre": {
+        "label": "Romantic",
+        "value": 10749
+      },
+      "filmReleaseDate": {
+        "label": "Fantasy",
+        "value": 14
+      },
+      "ratingsRange": {
+        "label": "Fantasy",
+        "value": 14
+      },
+      "runTime": {
+        "label": "Fantasy",
+        "value": 14
+      }
+    },
+    "apiRequest": {
+      "with_genres": 10749,
+      "vote_average.gte": 14,
+      "with_runtime.gte": 14
+    }
+  },
+  {
+    "answers": {
+      "genre": {
+        "label": "Romantic",
+        "value": 10749
+      },
+      "filmReleaseDate": {
+        "label": "Fantasy",
+        "value": 14
+      },
+      "ratingsRange": {
+        "label": "Fantasy",
+        "value": 14
+      },
+      "runTime": {
+        "label": "Comedy",
+        "value": 35
+      }
+    },
+    "apiRequest": {
+      "with_genres": 10749,
+      "vote_average.gte": 14,
+      "with_runtime.gte": 35
+    }
+  },
+  {
+    "answers": {
+      "genre": {
+        "label": "Romantic",
+        "value": 10749
+      },
+      "filmReleaseDate": {
+        "label": "Fantasy",
+        "value": 14
+      },
+      "ratingsRange": {
+        "label": "Comedy",
+        "value": 35
+      },
+      "runTime": {
+        "label": "Fantasy",
+        "value": 14
+      }
+    },
+    "apiRequest": {
+      "with_genres": 10749,
+      "vote_average.gte": 35,
+      "with_runtime.gte": 14
+    }
+  },
+  {
+    "answers": {
+      "genre": {
+        "label": "Romantic",
+        "value": 10749
+      },
+      "filmReleaseDate": {
+        "label": "Fantasy",
+        "value": 14
+      },
+      "ratingsRange": {
+        "label": "Comedy",
+        "value": 35
+      },
+      "runTime": {
+        "label": "Comedy",
+        "value": 35
+      }
+    },
+    "apiRequest": {
+      "with_genres": 10749,
+      "vote_average.gte": 35,
+      "with_runtime.gte": 35
+    }
+  },
+  {
+    "answers": {
+      "genre": {
+        "label": "Romantic",
+        "value": 10749
+      },
+      "filmReleaseDate": {
+        "label": "Fantasy",
+        "value": 14
+      },
+      "ratingsRange": {
+        "label": "Horror",
+        "value": 27
+      },
+      "runTime": {
+        "label": "Fantasy",
+        "value": 14
+      }
+    },
+    "apiRequest": {
+      "with_genres": 10749,
+      "vote_average.gte": 27,
+      "with_runtime.gte": 14
+    }
+  },
+  {
+    "answers": {
+      "genre": {
+        "label": "Romantic",
+        "value": 10749
+      },
+      "filmReleaseDate": {
+        "label": "Fantasy",
+        "value": 14
+      },
+      "ratingsRange": {
+        "label": "Horror",
+        "value": 27
+      },
+      "runTime": {
+        "label": "Comedy",
+        "value": 35
+      }
+    },
+    "apiRequest": {
+      "with_genres": 10749,
+      "vote_average.gte": 27,
+      "with_runtime.gte": 35
+    }
+  },
+  {
+    "answers": {
+      "genre": {
+        "label": "Romantic",
+        "value": 10749
+      },
+      "filmReleaseDate": {
+        "label": "Comedy",
+        "value": 35
+      },
+      "ratingsRange": {
+        "label": "Fantasy",
+        "value": 14
+      },
+      "runTime": {
+        "label": "Fantasy",
+        "value": 14
+      }
+    },
+    "apiRequest": {
+      "with_genres": 10749,
+      "vote_average.gte": 14,
+      "with_runtime.gte": 14
+    }
+  },
+  {
+    "answers": {
+      "genre": {
+        "label": "Romantic",
+        "value": 10749
+      },
+      "filmReleaseDate": {
+        "label": "Comedy",
+        "value": 35
+      },
+      "ratingsRange": {
+        "label": "Fantasy",
+        "value": 14
+      },
+      "runTime": {
+        "label": "Comedy",
+        "value": 35
+      }
+    },
+    "apiRequest": {
+      "with_genres": 10749,
+      "vote_average.gte": 14,
+      "with_runtime.gte": 35
+    }
+  },
+  {
+    "answers": {
+      "genre": {
+        "label": "Romantic",
+        "value": 10749
+      },
+      "filmReleaseDate": {
+        "label": "Comedy",
+        "value": 35
+      },
+      "ratingsRange": {
+        "label": "Comedy",
+        "value": 35
+      },
+      "runTime": {
+        "label": "Fantasy",
+        "value": 14
+      }
+    },
+    "apiRequest": {
+      "with_genres": 10749,
+      "vote_average.gte": 35,
+      "with_runtime.gte": 14
+    }
+  },
+  {
+    "answers": {
+      "genre": {
+        "label": "Romantic",
+        "value": 10749
+      },
+      "filmReleaseDate": {
+        "label": "Comedy",
+        "value": 35
+      },
+      "ratingsRange": {
+        "label": "Comedy",
+        "value": 35
+      },
+      "runTime": {
+        "label": "Comedy",
+        "value": 35
+      }
+    },
+    "apiRequest": {
+      "with_genres": 10749,
+      "vote_average.gte": 35,
+      "with_runtime.gte": 35
+    }
+  },
+  {
+    "answers": {
+      "genre": {
+        "label": "Romantic",
+        "value": 10749
+      },
+      "filmReleaseDate": {
+        "label": "Comedy",
+        "value": 35
+      },
+      "ratingsRange": {
+        "label": "Horror",
+        "value": 27
+      },
+      "runTime": {
+        "label": "Fantasy",
+        "value": 14
+      }
+    },
+    "apiRequest": {
+      "with_genres": 10749,
+      "vote_average.gte": 27,
+      "with_runtime.gte": 14
+    }
+  },
+  {
+    "answers": {
+      "genre": {
+        "label": "Romantic",
+        "value": 10749
+      },
+      "filmReleaseDate": {
+        "label": "Comedy",
+        "value": 35
+      },
+      "ratingsRange": {
+        "label": "Horror",
+        "value": 27
+      },
+      "runTime": {
+        "label": "Comedy",
+        "value": 35
+      }
+    },
+    "apiRequest": {
+      "with_genres": 10749,
+      "vote_average.gte": 27,
+      "with_runtime.gte": 35
+    }
+  },
+  {
+    "answers": {
+      "genre": {
+        "label": "Romantic",
+        "value": 10749
+      },
+      "filmReleaseDate": {
+        "label": "Horror",
+        "value": 27
+      },
+      "ratingsRange": {
+        "label": "Fantasy",
+        "value": 14
+      },
+      "runTime": {
+        "label": "Fantasy",
+        "value": 14
+      }
+    },
+    "apiRequest": {
+      "with_genres": 10749,
+      "vote_average.gte": 14,
+      "with_runtime.gte": 14
+    }
+  },
+  {
+    "answers": {
+      "genre": {
+        "label": "Romantic",
+        "value": 10749
+      },
+      "filmReleaseDate": {
+        "label": "Horror",
+        "value": 27
+      },
+      "ratingsRange": {
+        "label": "Fantasy",
+        "value": 14
+      },
+      "runTime": {
+        "label": "Comedy",
+        "value": 35
+      }
+    },
+    "apiRequest": {
+      "with_genres": 10749,
+      "vote_average.gte": 14,
+      "with_runtime.gte": 35
+    }
+  },
+  {
+    "answers": {
+      "genre": {
+        "label": "Romantic",
+        "value": 10749
+      },
+      "filmReleaseDate": {
+        "label": "Horror",
+        "value": 27
+      },
+      "ratingsRange": {
+        "label": "Comedy",
+        "value": 35
+      },
+      "runTime": {
+        "label": "Fantasy",
+        "value": 14
+      }
+    },
+    "apiRequest": {
+      "with_genres": 10749,
+      "vote_average.gte": 35,
+      "with_runtime.gte": 14
+    }
+  },
+  {
+    "answers": {
+      "genre": {
+        "label": "Romantic",
+        "value": 10749
+      },
+      "filmReleaseDate": {
+        "label": "Horror",
+        "value": 27
+      },
+      "ratingsRange": {
+        "label": "Comedy",
+        "value": 35
+      },
+      "runTime": {
+        "label": "Comedy",
+        "value": 35
+      }
+    },
+    "apiRequest": {
+      "with_genres": 10749,
+      "vote_average.gte": 35,
+      "with_runtime.gte": 35
+    }
+  },
+  {
+    "answers": {
+      "genre": {
+        "label": "Romantic",
+        "value": 10749
+      },
+      "filmReleaseDate": {
+        "label": "Horror",
+        "value": 27
+      },
+      "ratingsRange": {
+        "label": "Horror",
+        "value": 27
+      },
+      "runTime": {
+        "label": "Fantasy",
+        "value": 14
+      }
+    },
+    "apiRequest": {
+      "with_genres": 10749,
+      "vote_average.gte": 27,
+      "with_runtime.gte": 14
+    }
+  },
+  {
+    "answers": {
+      "genre": {
+        "label": "Romantic",
+        "value": 10749
+      },
+      "filmReleaseDate": {
+        "label": "Horror",
+        "value": 27
+      },
+      "ratingsRange": {
+        "label": "Horror",
+        "value": 27
+      },
+      "runTime": {
+        "label": "Comedy",
+        "value": 35
+      }
+    },
+    "apiRequest": {
+      "with_genres": 10749,
+      "vote_average.gte": 27,
+      "with_runtime.gte": 35
+    }
+  },
+  {
+    "answers": {
+      "genre": {
+        "label": "Thriller",
+        "value": 53
+      },
+      "filmReleaseDate": {
+        "label": "Fantasy",
+        "value": 14
+      },
+      "ratingsRange": {
+        "label": "Fantasy",
+        "value": 14
+      },
+      "runTime": {
+        "label": "Fantasy",
+        "value": 14
+      }
+    },
+    "apiRequest": {
+      "with_genres": 53,
+      "vote_average.gte": 14,
+      "with_runtime.gte": 14
+    }
+  },
+  {
+    "answers": {
+      "genre": {
+        "label": "Thriller",
+        "value": 53
+      },
+      "filmReleaseDate": {
+        "label": "Fantasy",
+        "value": 14
+      },
+      "ratingsRange": {
+        "label": "Fantasy",
+        "value": 14
+      },
+      "runTime": {
+        "label": "Comedy",
+        "value": 35
+      }
+    },
+    "apiRequest": {
+      "with_genres": 53,
+      "vote_average.gte": 14,
+      "with_runtime.gte": 35
+    }
+  },
+  {
+    "answers": {
+      "genre": {
+        "label": "Thriller",
+        "value": 53
+      },
+      "filmReleaseDate": {
+        "label": "Fantasy",
+        "value": 14
+      },
+      "ratingsRange": {
+        "label": "Comedy",
+        "value": 35
+      },
+      "runTime": {
+        "label": "Fantasy",
+        "value": 14
+      }
+    },
+    "apiRequest": {
+      "with_genres": 53,
+      "vote_average.gte": 35,
+      "with_runtime.gte": 14
+    }
+  },
+  {
+    "answers": {
+      "genre": {
+        "label": "Thriller",
+        "value": 53
+      },
+      "filmReleaseDate": {
+        "label": "Fantasy",
+        "value": 14
+      },
+      "ratingsRange": {
+        "label": "Comedy",
+        "value": 35
+      },
+      "runTime": {
+        "label": "Comedy",
+        "value": 35
+      }
+    },
+    "apiRequest": {
+      "with_genres": 53,
+      "vote_average.gte": 35,
+      "with_runtime.gte": 35
+    }
+  },
+  {
+    "answers": {
+      "genre": {
+        "label": "Thriller",
+        "value": 53
+      },
+      "filmReleaseDate": {
+        "label": "Fantasy",
+        "value": 14
+      },
+      "ratingsRange": {
+        "label": "Horror",
+        "value": 27
+      },
+      "runTime": {
+        "label": "Fantasy",
+        "value": 14
+      }
+    },
+    "apiRequest": {
+      "with_genres": 53,
+      "vote_average.gte": 27,
+      "with_runtime.gte": 14
+    }
+  },
+  {
+    "answers": {
+      "genre": {
+        "label": "Thriller",
+        "value": 53
+      },
+      "filmReleaseDate": {
+        "label": "Fantasy",
+        "value": 14
+      },
+      "ratingsRange": {
+        "label": "Horror",
+        "value": 27
+      },
+      "runTime": {
+        "label": "Comedy",
+        "value": 35
+      }
+    },
+    "apiRequest": {
+      "with_genres": 53,
+      "vote_average.gte": 27,
+      "with_runtime.gte": 35
+    }
+  },
+  {
+    "answers": {
+      "genre": {
+        "label": "Thriller",
+        "value": 53
+      },
+      "filmReleaseDate": {
+        "label": "Comedy",
+        "value": 35
+      },
+      "ratingsRange": {
+        "label": "Fantasy",
+        "value": 14
+      },
+      "runTime": {
+        "label": "Fantasy",
+        "value": 14
+      }
+    },
+    "apiRequest": {
+      "with_genres": 53,
+      "vote_average.gte": 14,
+      "with_runtime.gte": 14
+    }
+  },
+  {
+    "answers": {
+      "genre": {
+        "label": "Thriller",
+        "value": 53
+      },
+      "filmReleaseDate": {
+        "label": "Comedy",
+        "value": 35
+      },
+      "ratingsRange": {
+        "label": "Fantasy",
+        "value": 14
+      },
+      "runTime": {
+        "label": "Comedy",
+        "value": 35
+      }
+    },
+    "apiRequest": {
+      "with_genres": 53,
+      "vote_average.gte": 14,
+      "with_runtime.gte": 35
+    }
+  },
+  {
+    "answers": {
+      "genre": {
+        "label": "Thriller",
+        "value": 53
+      },
+      "filmReleaseDate": {
+        "label": "Comedy",
+        "value": 35
+      },
+      "ratingsRange": {
+        "label": "Comedy",
+        "value": 35
+      },
+      "runTime": {
+        "label": "Fantasy",
+        "value": 14
+      }
+    },
+    "apiRequest": {
+      "with_genres": 53,
+      "vote_average.gte": 35,
+      "with_runtime.gte": 14
+    }
+  },
+  {
+    "answers": {
+      "genre": {
+        "label": "Thriller",
+        "value": 53
+      },
+      "filmReleaseDate": {
+        "label": "Comedy",
+        "value": 35
+      },
+      "ratingsRange": {
+        "label": "Comedy",
+        "value": 35
+      },
+      "runTime": {
+        "label": "Comedy",
+        "value": 35
+      }
+    },
+    "apiRequest": {
+      "with_genres": 53,
+      "vote_average.gte": 35,
+      "with_runtime.gte": 35
+    }
+  },
+  {
+    "answers": {
+      "genre": {
+        "label": "Thriller",
+        "value": 53
+      },
+      "filmReleaseDate": {
+        "label": "Comedy",
+        "value": 35
+      },
+      "ratingsRange": {
+        "label": "Horror",
+        "value": 27
+      },
+      "runTime": {
+        "label": "Fantasy",
+        "value": 14
+      }
+    },
+    "apiRequest": {
+      "with_genres": 53,
+      "vote_average.gte": 27,
+      "with_runtime.gte": 14
+    }
+  },
+  {
+    "answers": {
+      "genre": {
+        "label": "Thriller",
+        "value": 53
+      },
+      "filmReleaseDate": {
+        "label": "Comedy",
+        "value": 35
+      },
+      "ratingsRange": {
+        "label": "Horror",
+        "value": 27
+      },
+      "runTime": {
+        "label": "Comedy",
+        "value": 35
+      }
+    },
+    "apiRequest": {
+      "with_genres": 53,
+      "vote_average.gte": 27,
+      "with_runtime.gte": 35
+    }
+  },
+  {
+    "answers": {
+      "genre": {
+        "label": "Thriller",
+        "value": 53
+      },
+      "filmReleaseDate": {
+        "label": "Horror",
+        "value": 27
+      },
+      "ratingsRange": {
+        "label": "Fantasy",
+        "value": 14
+      },
+      "runTime": {
+        "label": "Fantasy",
+        "value": 14
+      }
+    },
+    "apiRequest": {
+      "with_genres": 53,
+      "vote_average.gte": 14,
+      "with_runtime.gte": 14
+    }
+  },
+  {
+    "answers": {
+      "genre": {
+        "label": "Thriller",
+        "value": 53
+      },
+      "filmReleaseDate": {
+        "label": "Horror",
+        "value": 27
+      },
+      "ratingsRange": {
+        "label": "Fantasy",
+        "value": 14
+      },
+      "runTime": {
+        "label": "Comedy",
+        "value": 35
+      }
+    },
+    "apiRequest": {
+      "with_genres": 53,
+      "vote_average.gte": 14,
+      "with_runtime.gte": 35
+    }
+  },
+  {
+    "answers": {
+      "genre": {
+        "label": "Thriller",
+        "value": 53
+      },
+      "filmReleaseDate": {
+        "label": "Horror",
+        "value": 27
+      },
+      "ratingsRange": {
+        "label": "Comedy",
+        "value": 35
+      },
+      "runTime": {
+        "label": "Fantasy",
+        "value": 14
+      }
+    },
+    "apiRequest": {
+      "with_genres": 53,
+      "vote_average.gte": 35,
+      "with_runtime.gte": 14
+    }
+  },
+  {
+    "answers": {
+      "genre": {
+        "label": "Thriller",
+        "value": 53
+      },
+      "filmReleaseDate": {
+        "label": "Horror",
+        "value": 27
+      },
+      "ratingsRange": {
+        "label": "Comedy",
+        "value": 35
+      },
+      "runTime": {
+        "label": "Comedy",
+        "value": 35
+      }
+    },
+    "apiRequest": {
+      "with_genres": 53,
+      "vote_average.gte": 35,
+      "with_runtime.gte": 35
+    }
+  },
+  {
+    "answers": {
+      "genre": {
+        "label": "Thriller",
+        "value": 53
+      },
+      "filmReleaseDate": {
+        "label": "Horror",
+        "value": 27
+      },
+      "ratingsRange": {
+        "label": "Horror",
+        "value": 27
+      },
+      "runTime": {
+        "label": "Fantasy",
+        "value": 14
+      }
+    },
+    "apiRequest": {
+      "with_genres": 53,
+      "vote_average.gte": 27,
+      "with_runtime.gte": 14
+    }
+  },
+  {
+    "answers": {
+      "genre": {
+        "label": "Thriller",
+        "value": 53
+      },
+      "filmReleaseDate": {
+        "label": "Horror",
+        "value": 27
+      },
+      "ratingsRange": {
+        "label": "Horror",
+        "value": 27
+      },
+      "runTime": {
+        "label": "Comedy",
+        "value": 35
+      }
+    },
+    "apiRequest": {
+      "with_genres": 53,
+      "vote_average.gte": 27,
+      "with_runtime.gte": 35
+    }
+  }
+]
