@@ -6,6 +6,7 @@ import Camera from '../../assets/camera.png'
 const Hero = () => {
    return (
       <>
+         
          <div id="hero-section" className="hero-container">
             <div className="left-container">
                <img src={HeroImg} />

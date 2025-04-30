@@ -1,17 +1,17 @@
-// import { Carousel } from 'primereact/carousel';
-import AvatarCarousel from "./AvatarCarousel";
+import Avatars from "./Avatars";
 
 const Creators = () => {
    return (
       <>
          <div id="creators-section" className="the-creators-container">
             <h1 className="the-creators-title">The Creators</h1>
-            <div className="carousel-content-container">
-               <div className="carousel-container">
-                  <AvatarCarousel />
+            <div className="avatar-content-container">
+               <div className="avatar-container">
+                  <Avatars />
                </div>
             </div>
          </div>
+
 
       </>
    );

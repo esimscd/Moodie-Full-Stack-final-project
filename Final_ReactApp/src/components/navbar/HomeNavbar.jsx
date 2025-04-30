@@ -22,7 +22,7 @@ const HomeNavbar = () => {
 
    return (
       <div className="nav-container">
-      <Link to="/" className="logo-link">
+         <Link to="/" className="logo-link">
             <img id="moodie-logo" src={moodieLogo} alt="Moodie Logo" />
          </Link>
          <nav>
