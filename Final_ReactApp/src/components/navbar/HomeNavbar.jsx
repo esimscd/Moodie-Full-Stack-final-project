@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import moodieLogo from "../../assets/logos/moodie_logo.png";
@@ -19,8 +19,6 @@ const HomeNavbar = () => {
          window.scrollTo({ top: y, behavior: "smooth" });
       }
    };
-
-   const [menuOpen, setMenuOpen] = useState(false);
 
    return (
       <div className="nav-container">
