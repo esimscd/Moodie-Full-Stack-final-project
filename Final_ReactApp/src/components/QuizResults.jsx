@@ -5,7 +5,7 @@ const API_KEY = "39b6478c947539cc4929cc5746e3fd48"
 
 
 const QuizResults = ({ quizAnswers }) => {
-    const [movie, setMovie] = useState([]);
+    const [movies, setMovies] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
 
@@ -37,7 +37,7 @@ const QuizResults = ({ quizAnswers }) => {
         
                 if (data.results?.length > 0) {
                   const shuffled = [...data.results].sort(() => 0.5 - Math.random());
-                  setMovies(shuffled.slice(0, 3)); // Get 3 random movies
+                  setMovies(shuffled.slice(0, 1)); // Get 1 random movie
                 } else {
                   setError("No matching movies found. Try adjusting your answers.");
                 }
@@ -54,7 +54,7 @@ const QuizResults = ({ quizAnswers }) => {
     return (
         <>
            <div className="quiz-results-container fade-in">
-      <h1>🎬 Your Movie Matches</h1>
+      <h1 className="quiz-results-heading">🎬 Your Movie Matches</h1>
 
       {loading && <p>Loading recommendations...</p>}
       {error && <p className="error-message">{error}</p>}

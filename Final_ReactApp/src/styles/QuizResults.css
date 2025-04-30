@@ -38,12 +38,13 @@
 .movie-stats h2 {
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
-    color: #222;
+    align-items: left;
+    color: var(--soft-beige);
   }
   
   .movie-stats p {
     font-size: 0.95rem;
-    color: #555;
+    color: var(--soft-beige);
     margin-bottom: 0.4rem;
   }  
 
@@ -53,11 +54,11 @@
     object-fit: cover;
 }
 
-h1 {
+.quiz-results-heading {
     padding-top: 2rem;
     font-size: 2rem;
     margin-bottom: 1.5rem;
-    color: #333;
+    color: var(--soft-beige);
 }
 
 .quiz-results-container {
