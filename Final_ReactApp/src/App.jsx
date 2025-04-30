@@ -7,6 +7,7 @@ import "./index.css";
 import "./App.css";
 import Randomise from "./pages/Randomise";
 import ErrorPage from "./pages/ErrorPage";
+import ResultsPage from "./pages/ResultsPage";
 
 function App() {
   return (

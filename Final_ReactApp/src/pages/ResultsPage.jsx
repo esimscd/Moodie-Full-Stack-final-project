@@ -1,5 +1,5 @@
 import React from "react";
-import QuizResults from "./QuizResults";
+import QuizResults from "../components/QuizResults";
 import { useLocation, Link } from "react-router-dom";
 import "../styles/ResultsPage.css";
 
