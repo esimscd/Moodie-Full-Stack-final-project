@@ -54,3 +54,25 @@ li a, #start-moodie-btn {
 #moodie-logo {
    width: 93px;
 }
+
+@media only screen and (max-width: 692px){
+   li a, #start-moodie-btn {
+      font-size: 1.2rem;
+   }
+
+   #moodie-logo {
+      display: none; /* Remove the logo from the navbar to create space for the navlinks  */
+   }
+
+   nav {
+      justify-content: center; /* Centre the navbar horizontally */
+      
+   }
+}
+
+@media only screen and (min-width: 692px) and (max-width: 1215px){
+   ul {
+      margin-right: 30px; /* Allow a bit of space on the right so the links are not touching the right of the screen */
+      
+   }
+}
