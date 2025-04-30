@@ -1,0 +1,21 @@
+.quiz-question-box {
+  margin-top: 150px;
+  margin-bottom: 50px;
+  padding: 20px;
+  width: 1100px;
+  height: 150px;
+  border-radius: 30px;
+  background: var(--soft-beige);
+  display: flex;
+  align-items: center; /* Centers vertically */
+  justify-content: center; /* Centers horizontally */
+  text-align: center; /* Ensures the text is centered within the element */
+  word-wrap: break-word; /* Allows the text to break into multiple lines if needed */
+}
+
+.question-wording {
+  color: var(--deep-plum);
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}

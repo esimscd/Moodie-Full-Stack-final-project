@@ -23,7 +23,8 @@ const QuizQuestions = ({ quizAnswers, setQuizAnswers }) => {
     {
       //Set label value pairs for button so value is compatible with api - e.g. genre searches are done by genre id number
       id: "genre",
-      question: "What genre are you interested in?",
+      question:
+        "If your vibe right now had a soundtrack, the question is, would it be epic, heartwarming, mysterious, heart jolting or just full of laughs?",
       options: [
         { label: "Fantasy", value: 14 },
         { label: "Comedy", value: 35 },
