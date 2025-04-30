@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import moodieLogo from "../../assets/logos/moodie_logo.png";
@@ -20,9 +20,11 @@ const HomeNavbar = () => {
       }
    };
 
+   const [menuOpen, setMenuOpen] = useState(false);
+
    return (
       <div className="nav-container">
-      <Link to="/" className="logo-link">
+         <Link to="/" className="logo-link">
             <img id="moodie-logo" src={moodieLogo} alt="Moodie Logo" />
          </Link>
          <nav>
