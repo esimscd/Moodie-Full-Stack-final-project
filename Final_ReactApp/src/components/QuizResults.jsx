@@ -6,6 +6,9 @@ const API_KEY = "39b6478c947539cc4929cc5746e3fd48"
 
 const QuizResults = ({ quizAnswers }) => {
     const [movie, setMovie] = useState([]);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
+
 
     useEffect(() => {
 
@@ -21,47 +24,60 @@ const QuizResults = ({ quizAnswers }) => {
             "vote_average.gte": quizAnswers.ratingsRange //Rating range (0-10 on TMDB)
         });
 
-        console.log(params)
+        // console.log(params)
 
         const url = `https://api.themoviedb.org/3/discover/movie?${params.toString()}`;
 
-        //API call with URL that updates based on input params
+        // API call with URL that updates based on input params
         const fetchMovies = async () => {
-
-            const response = await fetch(url);
-            const data = await response.json(); //Convert results to JSON
-
-            const results = data.results;
-            //Randomly select one film to display from list of matching films
-            const randomIndex = Math.floor(Math.random() * results.length);
-            const randomMovie = results[randomIndex];
-            setMovie(randomMovie);
-            console.log(randomMovie)
-        };
+            try {
+                setLoading(true);
+                const response = await fetch(url);
+                const data = await response.json();
+        
+                if (data.results?.length > 0) {
+                  const shuffled = [...data.results].sort(() => 0.5 - Math.random());
+                  setMovies(shuffled.slice(0, 3)); // Get 3 random movies
+                } else {
+                  setError("No matching movies found. Try adjusting your answers.");
+                }
+              } catch (err) {
+                setError("Something went wrong. Please try again later.");
+              } finally {
+                setLoading(false);
+              }
+            };        
 
         fetchMovies();
     }, [quizAnswers]); //Quiz Answers as dependency 
 
     return (
         <>
-            <h1>Recommended for you:</h1>
+           <div className="quiz-results-container fade-in">
+      <h1>🎬 Your Movie Matches</h1>
 
-            <div className="movie-card">
+      {loading && <p>Loading recommendations...</p>}
+      {error && <p className="error-message">{error}</p>}
 
-                <img className="movie-image" src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt={movie.title} />
-                <div className="movie-stats">
-                    <h3>Title: {movie.title}</h3>
-                    <p>Overview: {movie.overview}</p>
-                    <p>Release Date: {movie.release_date}</p>
-                    <p>Runtime: {movie.runtime}</p>
-                    {movie.genre_ids && (
-                        <p><strong>Genre IDs:</strong> {movie.genre_ids.join(", ")}</p>
-                    )}
-                </div>
-
+      <div className="movie-grid">
+        {movies.map((movie) => (
+          <div className="movie-card" key={movie.id}>
+            <img
+              className="movie-image"
+              src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
+              alt={movie.title}
+            />
+            <div className="movie-stats">
+              <h2>{movie.title}</h2>
+              <p><strong>Overview:</strong> {movie.overview}</p>
+              <p><strong>Release Date:</strong> {movie.release_date}</p>
+              <p><strong>Rating:</strong> {movie.vote_average} / 10</p>
             </div>
-        </>
-    )
+          </div>
+        ))}
+      </div>
+    </div>
+    </>
+  );
 };
-
 export default QuizResults;

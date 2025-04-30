@@ -19,6 +19,7 @@ function App() {
           <Route path="/startmoodie" element={<StartMoodie />} />
           <Route path="/quizflow" element={<QuizFlow />} />
           <Route path="/randomise" element={<Randomise />} />
+          <Route path="/results" element={<ResultsPage />} />
 
           {/* Catch-all route for unmatched URLs */}
           <Route path="*" element={<ErrorPage />} />
