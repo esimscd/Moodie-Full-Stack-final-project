@@ -2,8 +2,9 @@ import React from "react";
 import { useState } from "react";
 import "../styles/QuizQuestions.css";
 import QuizAnswerButton from "./QuizAnswerButton";
+import QuizQuestion from "./QuizQuestion";
 
-const QuizQuestions = ({ quizAnswers, setQuizAnswers, setQuizComplete }) => {
+const QuizQuestions = ({ quizAnswers, setQuizAnswers }) => {
   // Utilise useState to manage the current question to to be displayed and the options for answers
   const [currentIndex, setCurrentIndex] = useState(0);
   // Utilise useState to manage the answers selected by the user
@@ -22,7 +23,8 @@ const QuizQuestions = ({ quizAnswers, setQuizAnswers, setQuizComplete }) => {
     {
       //Set label value pairs for button so value is compatible with api - e.g. genre searches are done by genre id number
       id: "genre",
-      question: "What genre are you interested in?",
+      question:
+        "If your vibe right now had a soundtrack, the question is, would it be epic, heartwarming, mysterious, heart jolting or just full of laughs?",
       options: [
         { label: "Fantasy", value: 14 },
         { label: "Comedy", value: 35 },
@@ -115,7 +117,7 @@ const QuizQuestions = ({ quizAnswers, setQuizAnswers, setQuizComplete }) => {
     <>
       {currentIndex < quizQuestions.length ? (
         <>
-          <h2>{currentQuestion.question}</h2>
+          <QuizQuestion question={currentQuestion.question} />
           {currentQuestion.options.map((option, index) => (
             // We will need to add a key to each of the buttons to ensure that React can identify them
             // We can also create button components to make it easier to manage
