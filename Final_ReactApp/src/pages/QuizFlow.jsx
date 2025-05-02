@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import StartAgainNavbar from "../components/navbar/StartAgainNavbar";
 import QuizQuestions from "../components/QuizQuestions";
 import QuizResults from "../components/QuizResults";
+import Footer from "../components/Footer"
 
 
 const QuizFlow = () => {
@@ -21,7 +22,7 @@ const QuizFlow = () => {
       <StartAgainNavbar/>
       <QuizQuestions quizAnswers ={quizAnswers} setQuizAnswers = {setQuizAnswers} setQuizComplete = {setQuizComplete}/>
       {quizComplete && (<QuizResults quizAnswers = {quizAnswers}/> )} 
-      
+      <Footer/>
     </>
   ); //conditionally rendering results to show when 'setQuizComplete'=true by manually setting it true when questions answered=5
 };
