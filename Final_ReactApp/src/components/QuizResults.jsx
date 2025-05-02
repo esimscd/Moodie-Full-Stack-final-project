@@ -29,7 +29,7 @@ const QuizResults = ({ quizAnswers }) => {
             "with_runtime.gte": quizAnswers.runTime, //Runtime upper and lower limits
             "with_runtime.lte": quizAnswers.runTime + 60,
             "with_vote_count.gte": quizAnswers.voteCount,
-            include_adult: false, //Filter to exclude adult content - added standard so results are suitable for groups/age ranges
+            include_adult: false, //Filter to exclude adult content - added as standard so results are suitable for groups/age ranges
         });
 
         console.log(params)
