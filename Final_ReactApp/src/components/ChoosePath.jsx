@@ -22,7 +22,7 @@ function ChoosePath() {
           </button>
           <button
             onClick={() => handleClick("/genre")}
-            className="choose-path-btn"
+            className="choose-path-btn random-btn"
           >
             Random Movie Generator
           </button>
