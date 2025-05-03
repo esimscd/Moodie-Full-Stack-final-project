@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import "../styles/QuizResults.css";
-import StartAgainNavbar from "../components/navbar/StartAgainNavbar";
-import Footer from "../components/Footer";
+import StartAgainNavbar from "./navbar/StartAgainNavbar";
 import popcornLogo from "../assets/logos/moodie-popcorn.png";
 
 const API_KEY = "39b6478c947539cc4929cc5746e3fd48";
@@ -72,14 +71,13 @@ const QuizResults = ({ quizAnswers }) => {
 
   return (
     <>
-      <StartAgainNavbar />
+      <StartAgainNavbar/>
       <div className="quiz-results-container">
         <img src={popcornLogo} alt="Popcorn" className="popcorn-bg" />
         <h1 className="quiz-results-heading">Moodie Recommends</h1>
 
         {loading && <p>Loading...</p>}
         {error && <p className="error-message">{error}</p>}
-
         {movies.map((movie) => (
           <div className="movie-card" key={movie.id}>
             <img
