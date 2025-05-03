@@ -75,7 +75,7 @@ for (let i = 0; i < q1.length; i++) {
                         },
                         // push matching apiRequest object with corresponding query parameters as keys
                         apiRequest: {
-                            with_genres: a1.value | a2.value,
+                            with_genres: `${a1.value}|${a2.value}`,
                             "primary_release_date.gte": a3.value.start,
                             "primary_release_date.lte": a3.value.end,
                             "vote_average.gte": a4.value,
