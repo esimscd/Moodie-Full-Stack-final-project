@@ -22,7 +22,10 @@ const HomeNavbar = () => {
 
    return (
       <div className="nav-container">
-         <Link to="/" className="logo-link">
+         <Link to="/" onClick={(e) => {
+                        e.preventDefault();
+                        scrollToSection("hero-section");
+                     }} className="logo-link">
             <img id="moodie-logo" src={moodieLogo} alt="Moodie Logo" />
          </Link>
          <nav>
