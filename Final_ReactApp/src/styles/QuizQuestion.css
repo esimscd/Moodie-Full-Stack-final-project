@@ -1,5 +1,5 @@
 .quiz-question-wrapper {
-  background: linear-gradient(to bottom right, #40244c, #cc6976); 
+  background: linear-gradient( var(--muted-mauve), var(--purple, var(--dark-purple-black)), var(--dark-purple-black)); 
   min-height: 100vh;
   padding: 3rem 1rem;
   display: flex;
@@ -25,9 +25,9 @@
 }
 
 .question-wording {
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   font-weight: 700;
-  color: var(--deep-plum);
+  color: var(--soft-beige);
   margin-bottom: 1.5rem;
 }
 
@@ -65,7 +65,7 @@
 }
 
 .quiz-answer-button:hover {
-  background-color: #774c60;
+  background-color: var(--soft-beige);
 }
 
 /* Responsive: stack to 1 column */

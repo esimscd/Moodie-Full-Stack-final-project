@@ -1,7 +1,7 @@
 .roulette-page {
   text-align: center;
   padding: 4rem 2rem;
-  background: linear-gradient(to bottom right, #774c60, #372549);
+  background: linear-gradient( var(--muted-mauve), var(--purple, var(--dark-purple-black)), var(--dark-purple-black));
   min-height: 100vh;
   color: var(--soft-beige);
   display: flex;
