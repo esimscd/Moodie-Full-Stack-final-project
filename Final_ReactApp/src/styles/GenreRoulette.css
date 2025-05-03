@@ -10,7 +10,7 @@
   
   .genre-wrapper {
     background-color: #2d1b3a;
-    border: 2px solid #eacdc2;
+    border: 2px solid var(--soft-beige);
     border-radius: 20px;
     padding: 3rem 2rem;
     max-width: 900px;
@@ -34,8 +34,8 @@
   }
   
   .genre-btn {
-    background-color: #eacdc2;
-    color: #372549;
+    background-color: var(--soft-beige);
+    color: var(--deep-plum);
     border: none;
     border-radius: 50%;
     width: 100px;

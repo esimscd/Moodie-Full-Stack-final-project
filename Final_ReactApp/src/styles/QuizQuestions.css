@@ -1,13 +1,13 @@
 h1 {
-  color: #eacdc2;
+  color: var(--soft-beige);
 }
 
 h2 {
-  color: #eacdc2;  
+  color: var(--soft-beige);  
   padding: 3rem;
 
 }
 
 .answers {
-  color: #eacdc2;
+  color: var(--soft-beige);
 }

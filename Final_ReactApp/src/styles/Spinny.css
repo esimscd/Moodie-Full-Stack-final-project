@@ -39,7 +39,7 @@
   
   .spinny-button {
     margin-top: 2rem;
-    background: #b75d69;
+    background: var(--vintage-rose);
     border: 2px solid var(--soft-beige);
     color: var(--dark-purple-black);
     font-size: 1.2rem;
@@ -51,6 +51,6 @@
   }
   
   .spinny-button:hover {
-    background: #403156;
+    background: var(--purple);
     color: var(--soft-beige);
   }
