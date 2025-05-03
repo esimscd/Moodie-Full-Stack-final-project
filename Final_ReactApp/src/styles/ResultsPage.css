@@ -3,7 +3,7 @@
   position: relative;
   z-index: 2;
   padding: 3rem 2rem;
-  background: linear-gradient(var(--muted-mauve), var(--vintage-rose));
+  background: linear-gradient(90deg, var(--muted-mauve),var(--muted-mauve) , var(--vintage-rose));
   color: var(--soft-beige);
   min-height: 100vh;
   display: flex;
@@ -14,10 +14,10 @@
 
 /* Title spacing */
 .quiz-results-heading {
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: bold;
   color: var(--soft-beige);
-  margin-bottom: 3rem;
+  /* margin-bottom: 1.2rem; */
 }
 
 /* Layout for poster + details */
@@ -31,6 +31,7 @@
   width: 100%;
   position: relative;
   z-index: 2;
+  
 
   /* Remove any unwanted box appearance */
   background: none;
@@ -43,6 +44,7 @@
   width: 300px;
   border-radius: 12px;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  border: 3px solid var(--soft-beige);
 }
 
 /* Right side: content */

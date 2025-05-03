@@ -45,8 +45,9 @@ function GenreRoulette() {
     <>
       <StartAgainNavbar />
       <div className="genre-page">
+        <h1 className="genre-title">Choose a genre</h1>
         <div className="genre-wrapper">
-          <h1 className="genre-title">Choose a genre</h1>
+          
           <div className="genre-grid">
             {genres.map((genre) => (
               <button

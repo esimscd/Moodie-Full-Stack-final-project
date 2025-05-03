@@ -18,7 +18,7 @@ function ChoosePath() {
             onClick={() => handleClick("/quizflow")}
             className="choose-path-btn quiz-btn"
           >
-            Mood quiz
+            Mood Quiz
           </button>
           <button
             onClick={() => handleClick("/genre")}

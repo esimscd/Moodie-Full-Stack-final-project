@@ -10,7 +10,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    background: linear-gradient(to bottom right, var(--muted-mauve), var(--vintage-rose));
+    background: linear-gradient(90deg, var(--muted-mauve),var(--muted-mauve) , var(--vintage-rose));
     padding: 1rem 1rem;
     min-height: calc(100vh - 80px);
     box-sizing: border-box;
@@ -63,7 +63,8 @@
   }
   
   .choose-path-btn:hover {
-    background-color: var(--muted-mauve);
+    background-color: var(--soft-beige);
+    color: var(--deep-plum);
     cursor: pointer;
   }
   
