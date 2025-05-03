@@ -57,7 +57,7 @@
   font-size: 1.1rem;
   font-weight: bold;
   border: 2px solid var(--soft-beige);
-  background-color: #b75d69;
+  background-color: var(--vintage-rose);
   color: var(--soft-beige);
   border-radius: 10px;
   cursor: pointer;
