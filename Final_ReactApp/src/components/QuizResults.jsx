@@ -109,7 +109,6 @@ const QuizResults = ({ quizAnswers }) => {
           </div>
         ))}
       </div>
-      <Footer />
     </>
   );
 };
