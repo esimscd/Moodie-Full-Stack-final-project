@@ -63,7 +63,7 @@ async function checkCombinations() {
     await sleep(100); // limit API calls to 10 per second for safe API use
   }
 
-  fs.writeFileSync("noResults.json", JSON.stringify(failures, null, 2));
+  fs.writeFileSync("failedCombinations.json", JSON.stringify(failures, null, 2));
   console.log(`Test completed. Failures logged: ${failures.length}`);
 }
 
