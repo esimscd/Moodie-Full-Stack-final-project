@@ -52,7 +52,7 @@ const QuizResults = ({ quizAnswers }) => {
           return;
         }
 
-        const genreInput = [quizAnswers.eveningGenre, quizAnswers.endingGenre].join("|");
+        const genreInput = [quizAnswers.eveningGenre, quizAnswers.endingGenre].join("|"); //combining genre filters from two questions
         const params = new URLSearchParams({
           api_key: API_KEY,
           with_genres: genreInput,
@@ -64,12 +64,12 @@ const QuizResults = ({ quizAnswers }) => {
           include_adult: false,
         });
 
-        const url = `https://api.themoviedb.org/3/discover/movie?${params.toString()}`;
+        const url = `https://api.themoviedb.org/3/discover/movie?${params.toString()}`; //params added into url as string
         const response = await fetch(url);
         const data = await response.json();
 
         if (data.results?.length > 0) {
-          const shuffled = [...data.results].sort(() => 0.5 - Math.random());
+          const shuffled = [...data.results].sort(() => 0.5 - Math.random());  //Film selected at random from set of results
           setMovies(shuffled.slice(0, 1));
         } else {
           setError("No matching movies found. Try adjusting your answers.");
@@ -83,7 +83,7 @@ const QuizResults = ({ quizAnswers }) => {
     };
 
     fetchMovies();
-  }, [quizAnswers, movieIdParam]);
+  }, [quizAnswers, movieIdParam]); //Quiz answers and movie id param as dependencies
 
   const renderGenres = (movie) => {
     const genreIds = movie.genre_ids || (movie.genres ? movie.genres.map((g) => g.id) : []);
