@@ -3,7 +3,12 @@
   position: relative;
   z-index: 2;
   padding: 3rem 2rem;
-  background: linear-gradient(90deg, var(--muted-mauve),var(--muted-mauve) , var(--vintage-rose));
+  background: linear-gradient(
+    90deg,
+    var(--muted-mauve),
+    var(--muted-mauve),
+    var(--vintage-rose)
+  );
   color: var(--soft-beige);
   min-height: 100vh;
   display: flex;
@@ -102,4 +107,3 @@
   pointer-events: none;
   user-select: none;
 }
-  
