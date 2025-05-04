@@ -42,13 +42,14 @@ const QuizResults = ({ quizAnswers }) => {
           with_genres: genreInput,
           "primary_release_date.gte": quizAnswers.filmReleaseDate.start,
           "primary_release_date.lte": quizAnswers.filmReleaseDate.end,
+          "vote_average.gte": quizAnswers.voteAverage,
           "with_runtime.gte": quizAnswers.runTime,
           "with_runtime.lte": quizAnswers.runTime + 60,
-          "with_vote_count.gte": quizAnswers.voteCount,
           include_adult: false,
         }); //collecting question results to apply multiple filters as parameters to be combined before inserted into URL 
 
         const url = `https://api.themoviedb.org/3/discover/movie?${params.toString()}`; //params added into url as string
+        console.log(`Query URL: ${url}`)
         const response = await fetch(url);
         const data = await response.json();
 
