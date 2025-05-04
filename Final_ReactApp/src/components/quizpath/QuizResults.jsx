@@ -4,8 +4,10 @@ import "../../styles/ResultsPage.css";
 import StartAgainNavbar from "../navbar/StartAgainNavbar";
 import popcornLogo from "../../assets/logos/moodie-popcorn.png";
 
+//Import API key from env file for access
 const API_KEY = import.meta.env.VITE_TMDB_API_KEY;
 
+//Quiz answers passed in as prop to be used in api filtering
 const QuizResults = ({ quizAnswers }) => {
   const [movies, setMovies] = useState([]);
   const [genreMap, setGenreMap] = useState({});
@@ -57,9 +59,11 @@ const QuizResults = ({ quizAnswers }) => {
         setLoading(false);
         return;
       }
-  
+
+      //Combine two genre inputs with "or" to create one genre filter that could find either
       const genreInput = [quizAnswers.eveningGenre, quizAnswers.endingGenre].join("|");
-  
+
+      //Set up of search parameter variables such as release year and runtime
       const params = new URLSearchParams({
         api_key: API_KEY,
         with_genres: genreInput,
@@ -71,18 +75,20 @@ const QuizResults = ({ quizAnswers }) => {
         include_adult: false,
       });
   
-      const url = `https://api.themoviedb.org/3/discover/movie?${params.toString()}`;//Combining genre filters from two questions
+      const url = `https://api.themoviedb.org/3/discover/movie?${params.toString()}`;//Converting parameters to string for url
   
       fetch(url)
         .then((res) => res.json())
         .then((data) => {
+          //Handling in case of no results returned
           if (data.results?.length > 0) {
             const shuffled = [...data.results].sort(() => 0.5 - Math.random());
             setMovies(shuffled.slice(0, 1));
           } else {
             setError("No matching movies found. Try adjusting your answers.");
           }
-        })
+        }) 
+        //Handling incase unable to fetch
         .catch((err) => {
           console.error(err);
           setError("Something went wrong. Please try again later.");
