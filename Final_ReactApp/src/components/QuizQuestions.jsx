@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "../styles/QuizQuestions.css";
 import QuizAnswerButton from "./QuizAnswerButton";
-import QuizQuestion from "./QuizQuestion";
 import danniImage from "../assets/TeamAvatars/Danni.png";
 
 const QuizQuestions = ({ quizAnswers, setQuizAnswers }) => {
@@ -12,38 +11,47 @@ const QuizQuestions = ({ quizAnswers, setQuizAnswers }) => {
       id: "eveningGenre",
       question: "Pick your ideal evening vibe:",
       options: [
-        { label: "Loud music and dance-offs", value: 10402 },
-        { label: "Blanket, burrito and snacks", value: 10749 },
+        { label: "Fun, vibrant and lighthearted", value: 16 },
         { label: "Creeping myself out for no reason", value: 27 },
+        { label: "Blanket, burrito and snacks", value: 10749 },
         { label: "Thinking about the universe and stuff", value: 878 },
       ],
     },
     {
       id: "endingGenre",
-      question: "What kind of ending do you crave?",
+      question: "At the end of the evening, how would you like to feel?",
       options: [
-        { label: "Happy, tied with a bow", value: 35 },
-        { label: "A twist that makes me scream", value: 53 },
-        { label: "One that leaves me thinking for days", value: 9648 },
-        { label: "Explosions and slow-mo hero walks", value: 28 },
+        { label: "Playful and carefree", value: 35 },
+        { label: "Twisted with suspense ", value: 53 },
+        { label: "Like I'm in an enchanted realm", value: 14 },
+        { label: "Exhilirated and like I'm ready to kick butt", value: 28 },
       ],
     },
     {
-      id: "voteCount",
-      question: "Do you prefer a popular movie or a cult classic?",
+      id: "voteAverage",
+      question: "As a film connoisseur, how would you describe your taste?",
       options: [
-        { label: "Popular movie", value: 100 },
-        { label: "Cult classic", value: 10 },
+        { label: "Good with an affinity for trash", value: 4 },
+        { label: "Decent, but I'm no snob", value: 6 },
+        { label: "Only the finest for me", value: 8 },
       ],
     },
     {
       id: "filmReleaseDate",
-      question: "Which style speaks to you?",
+      question: "Which two fashion accessories are you mostly likely to own?",
       options: [
-        { label: "1960-1980s", value: { start: "1960-01-01", end: "1979-12-31" } },
-        { label: "1980s-2000s", value: { start: "1980-01-01", end: "1999-12-31" } },
-        { label: "2000s-2015s", value: { start: "2000-01-01", end: "2014-12-31" } },
-        { label: "2015-2025", value: { start: "2015-01-01", end: "2024-12-31" } },
+        {
+          label: "Pearl earrings and bellbottom jeans",
+          value: { start: "1950-01-01", end: "1979-12-31" },
+        },
+        {
+          label: "Scrunchies and flannel shirts",
+          value: { start: "1980-01-01", end: "1999-12-31" },
+        },
+        {
+          label: "A studded belt and chunky sneakers",
+          value: { start: "2000-01-01", end: "2025-12-31" },
+        },
       ],
     },
     {
