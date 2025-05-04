@@ -2,7 +2,7 @@ import "../styles/Footer.css"
 import tmdbLogo from "../assets/logos/tmdbLogo.svg"
 
 
-function Footer() {
+const Footer = () => {
     return(
         <footer>
             <p className="main-footer-text">I'm not lazy, I'm just in a long-term relationship with my movie queue</p>

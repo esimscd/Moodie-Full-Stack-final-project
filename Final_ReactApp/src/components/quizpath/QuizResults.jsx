@@ -15,7 +15,7 @@ const QuizResults = ({ quizAnswers }) => {
   const movieIdParam = new URLSearchParams(location.search).get("movieId");
 
   // Fetch genre list once and map ids to names
-  useEffect(() => {
+   useEffect(() => {
     fetch(`https://api.themoviedb.org/3/genre/movie/list?api_key=${API_KEY}&language=en-US`)
       .then((res) => res.json())
       .then((data) => {
@@ -28,60 +28,68 @@ const QuizResults = ({ quizAnswers }) => {
       .catch((err) => console.error("Failed to fetch genre list", err));
   }, []);
 
-  // Fetch movie(s) based on quiz answers or selected movie ID
+  //Fetch movie(s) based on quiz answers or selected movie ID
   useEffect(() => {
-    const fetchMovies = async () => {
-      try {
-        setLoading(true);
-
-        if (movieIdParam) {
-          const res = await fetch(
-            `https://api.themoviedb.org/3/movie/${movieIdParam}?api_key=${API_KEY}&language=en-US`
-          );
-          const data = await res.json();
-          if (data && data.id) {
-            setMovies([data]);
-          } else {
-            setError("Movie not found.");
-          }
-          return;
-        }
-
-        if (!quizAnswers) {
-          setError("No quiz data or movie provided.");
-          return;
-        }
-
-        const genreInput = [quizAnswers.eveningGenre, quizAnswers.endingGenre].join("|"); //combining genre filters from two questions
-        const params = new URLSearchParams({
-          api_key: API_KEY,
-          with_genres: genreInput,
-          "primary_release_date.gte": quizAnswers.filmReleaseDate.start,
-          "primary_release_date.lte": quizAnswers.filmReleaseDate.end,
-          "vote_average.gte": quizAnswers.voteAverage,
-          "with_runtime.gte": quizAnswers.runTime,
-          "with_runtime.lte": quizAnswers.runTime + 60,
-          include_adult: false,
-        });
-
-        const url = `https://api.themoviedb.org/3/discover/movie?${params.toString()}`; //params added into url as string
-        const response = await fetch(url);
-        const data = await response.json();
-
-        if (data.results?.length > 0) {
-          const shuffled = [...data.results].sort(() => 0.5 - Math.random());  //Film selected at random from set of results
-          setMovies(shuffled.slice(0, 1));
-        } else {
-          setError("No matching movies found. Try adjusting your answers.");
-        }
-      } catch (err) {
-        console.error(err);
-        setError("Something went wrong. Please try again later.");
-      } finally {
-        setLoading(false);
+    const fetchMovies = () => {
+      setLoading(true);
+  
+      if (movieIdParam) {
+        fetch(`https://api.themoviedb.org/3/movie/${movieIdParam}?api_key=${API_KEY}&language=en-US`)
+          .then((res) => res.json())
+          .then((data) => {
+            if (data && data.id) {
+              setMovies([data]);
+            } else {
+              setError("Movie not found.");
+            }
+          })
+          .catch((err) => {
+            console.error(err);
+            setError("Something went wrong, please try again later.");
+          })
+          .finally(() => setLoading(false));
+  
+        return;
       }
+  
+      if (!quizAnswers) {
+        setError("No quiz data or movie provided.");
+        setLoading(false);
+        return;
+      }
+  
+      const genreInput = [quizAnswers.eveningGenre, quizAnswers.endingGenre].join("|");
+  
+      const params = new URLSearchParams({
+        api_key: API_KEY,
+        with_genres: genreInput,
+        "primary_release_date.gte": quizAnswers.filmReleaseDate.start,
+        "primary_release_date.lte": quizAnswers.filmReleaseDate.end,
+        "vote_average.gte": quizAnswers.voteAverage,
+        "with_runtime.gte": quizAnswers.runTime,
+        "with_runtime.lte": quizAnswers.runTime + 60,
+        include_adult: false,
+      });
+  
+      const url = `https://api.themoviedb.org/3/discover/movie?${params.toString()}`;//Combining genre filters from two questions
+  
+      fetch(url)
+        .then((res) => res.json())
+        .then((data) => {
+          if (data.results?.length > 0) {
+            const shuffled = [...data.results].sort(() => 0.5 - Math.random());
+            setMovies(shuffled.slice(0, 1));
+          } else {
+            setError("No matching movies found. Try adjusting your answers.");
+          }
+        })
+        .catch((err) => {
+          console.error(err);
+          setError("Something went wrong. Please try again later.");
+        })
+        .finally(() => setLoading(false));
     };
-
+  
     fetchMovies();
   }, [quizAnswers, movieIdParam]); //Quiz answers and movie id param as dependencies
 

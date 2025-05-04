@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import "../styles/StartMoodieChoosePath.css";
 
-function ChoosePath() {
+const ChoosePath = () => {
   const navigate = useNavigate();
 
   // path parameter navigates to route or page specified in button element
