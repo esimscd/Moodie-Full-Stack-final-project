@@ -1,4 +1,3 @@
-import React from "react";
 import { useEffect } from "react";
 import StartMoodieNavbar from "../components/navbar/StartMoodieNavbar";
 import Footer from "../components/Footer";
@@ -15,12 +14,12 @@ function StartMoodie() {
       <StartMoodieNavbar />
       <div className="start-moodie-page">
         <div className="start-moodie-wrapper">
-        <img
-          src={popcornLogo}
-          alt="Moodie Popcorn Logo"
-          className="popcorn-background"
-        />
-        <ChoosePath />
+          <img
+            src={popcornLogo}
+            alt="Moodie Popcorn Logo"
+            className="popcorn-background"
+          />
+          <ChoosePath />
         </div>
       </div>
       <Footer />
