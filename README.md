@@ -11,13 +11,13 @@ Moodie is a web app to help you decide what film to watch, there are two differe
 ## Getting started
 ### Prerequisites 
 * Node.js and npm installed
-* TMDb API key - you can create your own here
+* TMDb API key - you can create your own [here](https://www.themoviedb.org/signup)
 
 ### Installation
 1. Clone the respository locally
 2. CD into the project folder (Final_ReactApp)
 3. Run `npm install`
-4. Set up the API key: (this needs to be updated and explained when api key is extracted to .env with screenshots maybe?)
+4. Set up the API key: You can use file `.env.example` and rename this to `.env`. The variable name should remain as 'VITE_TMDB_API_KEY' but your unique API key should be added in here without quotation marks around it
 
 ### Running the app
 In your terminal, use command `npm run dev`, the app should then run locally
