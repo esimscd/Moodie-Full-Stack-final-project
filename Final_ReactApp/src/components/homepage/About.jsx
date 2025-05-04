@@ -1,5 +1,3 @@
-import React from "react";
-
 const About = () => {
   return (
     <>
@@ -19,8 +17,8 @@ const About = () => {
               If you want some quick suggestions, try the Random Movie
               Generator. Pick a genre and spin the wheel for a random film
               recommendation. If you'd like a more tailored suggestion, take our
-              quiz, and based on your answers, Moodie will recommend
-              a film for you to watch.
+              quiz, and based on your answers, Moodie will recommend a film for
+              you to watch.
             </p>{" "}
             <br />
             <p className="about-text">
