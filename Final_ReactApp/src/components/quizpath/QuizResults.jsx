@@ -8,11 +8,30 @@ const API_KEY = import.meta.env.VITE_TMDB_API_KEY;
 
 const QuizResults = ({ quizAnswers }) => {
   const [movies, setMovies] = useState([]);
+  const [genreMap, setGenreMap] = useState({});
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const location = useLocation();
-  const movieIdParam = new URLSearchParams(location.search).get("movieId");
 
+  const queryParams = new URLSearchParams(location.search);
+  const movieIdParam = queryParams.get("movieId");
+  const fallbackMood = queryParams.get("mood"); // optional fallback
+
+  // Fetch all genres and map id -> name
+  useEffect(() => {
+    fetch(`https://api.themoviedb.org/3/genre/movie/list?api_key=${API_KEY}&language=en-US`)
+      .then(res => res.json())
+      .then(data => {
+        const mapping = {};
+        data.genres.forEach((g) => {
+          mapping[g.id] = g.name;
+        });
+        setGenreMap(mapping);
+      })
+      .catch(err => console.error("Failed to fetch genre list", err));
+  }, []);
+
+  // Fetch movie(s) based on quiz answers or selected movie ID
   useEffect(() => {
     const fetchMovies = async () => {
       try {
@@ -36,7 +55,7 @@ const QuizResults = ({ quizAnswers }) => {
           return;
         }
 
-        const genreInput = [quizAnswers.eveningGenre, quizAnswers.endingGenre].join("|"); //combining genre filters from two questions
+        const genreInput = [quizAnswers.eveningGenre, quizAnswers.endingGenre].join("|");
         const params = new URLSearchParams({
           api_key: API_KEY,
           with_genres: genreInput,
@@ -46,15 +65,14 @@ const QuizResults = ({ quizAnswers }) => {
           "with_runtime.gte": quizAnswers.runTime,
           "with_runtime.lte": quizAnswers.runTime + 60,
           include_adult: false,
-        }); //collecting question results to apply multiple filters as parameters to be combined before inserted into URL 
+        });
 
-        const url = `https://api.themoviedb.org/3/discover/movie?${params.toString()}`; //params added into url as string
-        console.log(`Query URL: ${url}`)
+        const url = `https://api.themoviedb.org/3/discover/movie?${params.toString()}`;
         const response = await fetch(url);
         const data = await response.json();
 
         if (data.results?.length > 0) {
-          const shuffled = [...data.results].sort(() => 0.5 - Math.random()); //Film selected at random from set of results
+          const shuffled = [...data.results].sort(() => 0.5 - Math.random());
           setMovies(shuffled.slice(0, 1));
         } else {
           setError("No matching movies found. Try adjusting your answers.");
@@ -68,11 +86,26 @@ const QuizResults = ({ quizAnswers }) => {
     };
 
     fetchMovies();
-  }, [quizAnswers, movieIdParam]); //Quiz answers and movie id param as dependencies
+  }, [quizAnswers, movieIdParam]);
+
+  const renderGenres = (movie) => {
+    const genreIds = movie.genre_ids || (movie.genres ? movie.genres.map((g) => g.id) : []);
+    return genreIds.map((id) => genreMap[id]).filter(Boolean).join(", ") || "N/A";
+  };
+
+  const renderMoodMatch = () => {
+    if (quizAnswers?.moods?.length) {
+      return quizAnswers.moods.join(", ");
+    }
+    if (fallbackMood) {
+      return fallbackMood;
+    }
+    return "N/A";
+  };
 
   return (
     <>
-      <StartAgainNavbar/>
+      <StartAgainNavbar />
       <div className="quiz-results-container">
         <img src={popcornLogo} alt="Popcorn" className="popcorn-bg" />
         <h1 className="quiz-results-heading">Moodie Recommends</h1>
@@ -94,11 +127,7 @@ const QuizResults = ({ quizAnswers }) => {
               </div>
               <div className="detail-row">
                 <span className="detail-label">Genre:</span>
-                <div className="detail-box">N/A</div>
-              </div>
-              <div className="detail-row">
-                <span className="detail-label">Mood Match:</span>
-                <div className="detail-box">Humour, Action and Heartwarming</div>
+                <div className="detail-box">{renderGenres(movie)}</div>
               </div>
               <div className="detail-row synopsis-row">
                 <span className="detail-label">Synopsis:</span>
