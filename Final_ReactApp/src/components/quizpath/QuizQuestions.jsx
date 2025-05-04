@@ -13,20 +13,20 @@ const QuizQuestions = ({ quizAnswers, setQuizAnswers }) => {
   const quizQuestions = [
     {
       id: "eveningGenre",
-      question: "Pick your ideal evening vibe:",
+      question: "Pick your ideal evening vibe:", //genre filter 1
       options: [
-        { label: "Fun, vibrant and lighthearted", value: 16 }, //Adds animation as filter
-        { label: "Creeping myself out for no reason", value: 27 }, //Horror
+        { label: "Fun, vibrant and lighthearted", value: 16 }, //Animation
+        { label: "Creeping myself out for no reason", value: 27 }, // Horror
         { label: "Blanket, burrito and snacks", value: 10749 }, //Romance
         { label: "Thinking about the universe and stuff", value: 878 }, //Sci-Fi
       ],
       image: duneImage,
     },
     {
-      id: "endingGenre",
+      id: "endingGenre", //genre filter 2
       question: "At the end of the evening, how would you like to feel?",
       options: [
-        { label: "Playful and carefree", value: 35 }, //Comdey
+        { label: "Playful and carefree", value: 35 }, //Comedy
         { label: "Twisted with suspense ", value: 53 }, //Thriller
         { label: "Like I'm in an enchanted realm", value: 14 }, //Fantasy
         { label: "Exhilirated and like I'm ready to kick butt", value: 28 }, //Action
@@ -34,7 +34,7 @@ const QuizQuestions = ({ quizAnswers, setQuizAnswers }) => {
       image: beforeSunsetImage,
     },
     {
-      id: "voteAverage",
+      id: "voteAverage", //rating filter
       question: "As a film connoisseur, how would you describe your taste?",
       options: [
         { label: "Good with an affinity for trash", value: 4 },
@@ -44,7 +44,7 @@ const QuizQuestions = ({ quizAnswers, setQuizAnswers }) => {
       image: niagaraImage,
     },
     {
-      id: "filmReleaseDate",
+      id: "filmReleaseDate", //release date filter
       question: "Which two fashion accessories are you mostly likely to own?",
       options: [
         {
@@ -63,7 +63,7 @@ const QuizQuestions = ({ quizAnswers, setQuizAnswers }) => {
       image: neverendingStoryImage,
     },
     {
-      id: "runTime",
+      id: "runTime", //run time filter
       question: "Finally, how long have you got?",
       options: [
         { label: "I'm in a rush", value: 60 },

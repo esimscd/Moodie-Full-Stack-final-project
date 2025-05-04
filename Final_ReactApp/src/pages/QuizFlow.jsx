@@ -2,27 +2,29 @@ import React, { useState, useEffect } from "react";
 import StartAgainNavbar from "../components/navbar/StartAgainNavbar";
 import QuizQuestions from "../components/quizpath/QuizQuestions";
 import QuizResults from "../components/quizpath/QuizResults";
-import Footer from "../components/Footer"
-
+import Footer from "../components/Footer";
 
 const QuizFlow = () => {
+  const [quizAnswers, setQuizAnswers] = useState({});
+  const [quizComplete, setQuizComplete] = useState(false);
 
-  const [quizAnswers, setQuizAnswers] = useState ({})
-  const [quizComplete, setQuizComplete] = useState (false);
-
-  useEffect (() => {
-    //Checking if all qs are answered, hardcoded as 5 
-    if (Object.keys(quizAnswers).length === 5){
+  useEffect(() => {
+    //Checking if all qs are answered, hardcoded as 5
+    if (Object.keys(quizAnswers).length === 5) {
       setQuizComplete(true);
     }
   }, [quizAnswers]); //Quiz answers as dependency
 
   return (
     <>
-      <StartAgainNavbar/>
-      <QuizQuestions quizAnswers ={quizAnswers} setQuizAnswers = {setQuizAnswers} setQuizComplete = {setQuizComplete}/>
-      {quizComplete && (<QuizResults quizAnswers = {quizAnswers}/> )} 
-      <Footer/>
+      <StartAgainNavbar />
+      <QuizQuestions
+        quizAnswers={quizAnswers}
+        setQuizAnswers={setQuizAnswers}
+        setQuizComplete={setQuizComplete}
+      />
+      {quizComplete && <QuizResults quizAnswers={quizAnswers} />}
+      <Footer />
     </>
   ); //conditionally rendering results to show when 'setQuizComplete'=true by manually setting it true when questions answered=5
 };

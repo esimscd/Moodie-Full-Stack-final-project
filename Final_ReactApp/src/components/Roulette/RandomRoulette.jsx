@@ -23,7 +23,9 @@ function RandomRoulette() {
     )
       .then((res) => res.json())
       .then((data) => {
-        const filtered = data.results.filter((movie) => movie.title && movie.poster_path);
+        const filtered = data.results.filter(
+          (movie) => movie.title && movie.poster_path
+        );
         setMovies(filtered.slice(0, 20)); // Limit to 20 top results
       })
       .catch((err) => console.error("Failed to fetch movies", err));
@@ -42,7 +44,9 @@ function RandomRoulette() {
       <StartAgainNavbar />
       <div className="roulette-page">
         {!genreParam ? (
-          <p style={{ textAlign: "center", color: "red" }}>No genre selected.</p>
+          <p style={{ textAlign: "center", color: "red" }}>
+            No genre selected.
+          </p>
         ) : (
           <>
             <h1 className="roulette-heading">Roulette Mode</h1>

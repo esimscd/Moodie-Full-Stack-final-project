@@ -17,8 +17,10 @@ const QuizResults = ({ quizAnswers }) => {
   const movieIdParam = new URLSearchParams(location.search).get("movieId");
 
   // Fetch genre list once and map ids to names
-   useEffect(() => {
-    fetch(`https://api.themoviedb.org/3/genre/movie/list?api_key=${API_KEY}&language=en-US`)
+  useEffect(() => {
+    fetch(
+      `https://api.themoviedb.org/3/genre/movie/list?api_key=${API_KEY}&language=en-US`
+    )
       .then((res) => res.json())
       .then((data) => {
         const mapping = {};
@@ -34,9 +36,11 @@ const QuizResults = ({ quizAnswers }) => {
   useEffect(() => {
     const fetchMovies = () => {
       setLoading(true);
-  
+
       if (movieIdParam) {
-        fetch(`https://api.themoviedb.org/3/movie/${movieIdParam}?api_key=${API_KEY}&language=en-US`)
+        fetch(
+          `https://api.themoviedb.org/3/movie/${movieIdParam}?api_key=${API_KEY}&language=en-US`
+        )
           .then((res) => res.json())
           .then((data) => {
             if (data && data.id) {
@@ -50,18 +54,21 @@ const QuizResults = ({ quizAnswers }) => {
             setError("Something went wrong, please try again later.");
           })
           .finally(() => setLoading(false));
-  
+
         return;
       }
-  
+
       if (!quizAnswers) {
         setError("No quiz data or movie provided.");
         setLoading(false);
         return;
       }
 
-      //Combine two genre inputs with "or" to create one genre filter that could find either
-      const genreInput = [quizAnswers.eveningGenre, quizAnswers.endingGenre].join("|");
+      // combine genres to result for genre 1 or genre 2
+      const genreInput = [
+        quizAnswers.eveningGenre,
+        quizAnswers.endingGenre,
+      ].join("|");
 
       //Set up of search parameter variables such as release year and runtime
       const params = new URLSearchParams({
@@ -74,9 +81,10 @@ const QuizResults = ({ quizAnswers }) => {
         "with_runtime.lte": quizAnswers.runTime + 60,
         include_adult: false,
       });
-  
-      const url = `https://api.themoviedb.org/3/discover/movie?${params.toString()}`;//Converting parameters to string for url
-  
+
+      // URL used to query TMBD API
+      const url = `https://api.themoviedb.org/3/discover/movie?${params.toString()}`; //Parameter converted to string
+
       fetch(url)
         .then((res) => res.json())
         .then((data) => {
@@ -95,13 +103,20 @@ const QuizResults = ({ quizAnswers }) => {
         })
         .finally(() => setLoading(false));
     };
-  
+
     fetchMovies();
   }, [quizAnswers, movieIdParam]); //Quiz answers and movie id param as dependencies
 
+  // returns film recommendation genre on results page
   const renderGenres = (movie) => {
-    const genreIds = movie.genre_ids || (movie.genres ? movie.genres.map((g) => g.id) : []);
-    return genreIds.map((id) => genreMap[id]).filter(Boolean).join(", ") || "N/A";
+    const genreIds =
+      movie.genre_ids || (movie.genres ? movie.genres.map((g) => g.id) : []);
+    return (
+      genreIds
+        .map((id) => genreMap[id])
+        .filter(Boolean)
+        .join(", ") || "N/A"
+    );
   };
 
   return (
