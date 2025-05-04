@@ -5,6 +5,7 @@ import "../styles/StartMoodieChoosePath.css";
 function ChoosePath() {
   const navigate = useNavigate();
 
+  // path parameter navigates to route or page specified in button element
   const handleClick = (path) => {
     navigate(path);
   };
