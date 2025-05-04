@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import StartAgainNavbar from "../components/navbar/StartAgainNavbar";
-import QuizQuestions from "../components/QuizQuestions";
-import QuizResults from "../components/QuizResults";
+import QuizQuestions from "../components/quizpath/QuizQuestions";
+import QuizResults from "../components/quizpath/QuizResults";
 import Footer from "../components/Footer"
 
 
@@ -11,7 +11,7 @@ const QuizFlow = () => {
   const [quizComplete, setQuizComplete] = useState (false);
 
   useEffect (() => {
-    //Checking if all qs are answered, hardcoded as 5 so not ideal but hard to get length in here
+    //Checking if all qs are answered, hardcoded as 5 
     if (Object.keys(quizAnswers).length === 5){
       setQuizComplete(true);
     }

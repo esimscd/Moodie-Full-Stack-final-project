@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import "../styles/QuizQuestions.css";
+import "../../styles/QuizQuestions.css";
 import QuizAnswerButton from "./QuizAnswerButton";
-import danniImage from "../assets/TeamAvatars/Danni.png";
+import danniImage from "../../assets/TeamAvatars/Danni.png";
 
 const QuizQuestions = ({ quizAnswers, setQuizAnswers }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -11,20 +11,20 @@ const QuizQuestions = ({ quizAnswers, setQuizAnswers }) => {
       id: "eveningGenre",
       question: "Pick your ideal evening vibe:",
       options: [
-        { label: "Fun, vibrant and lighthearted", value: 16 },
-        { label: "Creeping myself out for no reason", value: 27 },
-        { label: "Blanket, burrito and snacks", value: 10749 },
-        { label: "Thinking about the universe and stuff", value: 878 },
+        { label: "Fun, vibrant and lighthearted", value: 16 }, //Adds animation as filter
+        { label: "Creeping myself out for no reason", value: 27 }, //Horror
+        { label: "Blanket, burrito and snacks", value: 10749 }, //Romance
+        { label: "Thinking about the universe and stuff", value: 878 }, //Scifi
       ],
     },
     {
       id: "endingGenre",
       question: "At the end of the evening, how would you like to feel?",
       options: [
-        { label: "Playful and carefree", value: 35 },
-        { label: "Twisted with suspense ", value: 53 },
-        { label: "Like I'm in an enchanted realm", value: 14 },
-        { label: "Exhilirated and like I'm ready to kick butt", value: 28 },
+        { label: "Playful and carefree", value: 35 }, //Comdey
+        { label: "Twisted with suspense ", value: 53 }, //Thriller
+        { label: "Like I'm in an enchanted realm", value: 14 }, //Fantasy
+        { label: "Exhilirated and like I'm ready to kick butt", value: 28 }, //Action
       ],
     },
     {
