@@ -6,10 +6,9 @@ import QuizFlow from "./pages/QuizFlow";
 import "./index.css";
 import "./App.css";
 import ErrorPage from "./pages/ErrorPage";
-import ResultsPage from "./pages/ResultsPage";
-import RandomRoulette from "./components/Roulette/RandomRoulette";
-import GenreRoulette from "./components/Roulette/GenreRoulette";
-import QuizResults from "./components/QuizResults";
+import RandomRoulette from "./components/roulette/RandomRoulette";
+import GenreRoulette from "./components/roulette/GenreRoulette";
+import QuizResults from "./components/quizpath/QuizResults";
 
 function App() {
   return (

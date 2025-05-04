@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/QuizAnswerButton.css";
+import "../../styles/QuizAnswerButton.css";
 
 const QuizAnswerButton = ({ quizAnswer, onClick }) => {
   return (

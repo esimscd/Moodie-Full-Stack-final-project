@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import "../styles/QuizResults.css";
-import StartAgainNavbar from "./navbar/StartAgainNavbar";
-import popcornLogo from "../assets/logos/moodie-popcorn.png";
+import "../../styles/ResultsPage.css";
+import StartAgainNavbar from "../navbar/StartAgainNavbar";
+import popcornLogo from "../../assets/logos/moodie-popcorn.png";
 
-const API_KEY = "39b6478c947539cc4929cc5746e3fd48";
+const API_KEY = import.meta.env.VITE_TMDB_API_KEY;
 
 const QuizResults = ({ quizAnswers }) => {
   const [movies, setMovies] = useState([]);
@@ -36,7 +36,7 @@ const QuizResults = ({ quizAnswers }) => {
           return;
         }
 
-        const genreInput = [quizAnswers.eveningGenre, quizAnswers.endingGenre].join("|");
+        const genreInput = [quizAnswers.eveningGenre, quizAnswers.endingGenre].join("|"); //combining genre filters from two questions
         const params = new URLSearchParams({
           api_key: API_KEY,
           with_genres: genreInput,
@@ -46,14 +46,14 @@ const QuizResults = ({ quizAnswers }) => {
           "with_runtime.lte": quizAnswers.runTime + 60,
           "with_vote_count.gte": quizAnswers.voteCount,
           include_adult: false,
-        });
+        }); //collecting question results to apply multiple filters as parameters to be combined before inserted into URL 
 
-        const url = `https://api.themoviedb.org/3/discover/movie?${params.toString()}`;
+        const url = `https://api.themoviedb.org/3/discover/movie?${params.toString()}`; //params added into url as string
         const response = await fetch(url);
         const data = await response.json();
 
         if (data.results?.length > 0) {
-          const shuffled = [...data.results].sort(() => 0.5 - Math.random());
+          const shuffled = [...data.results].sort(() => 0.5 - Math.random()); //Film selected at random from set of results
           setMovies(shuffled.slice(0, 1));
         } else {
           setError("No matching movies found. Try adjusting your answers.");
@@ -67,7 +67,7 @@ const QuizResults = ({ quizAnswers }) => {
     };
 
     fetchMovies();
-  }, [quizAnswers, movieIdParam]);
+  }, [quizAnswers, movieIdParam]); //Quiz answers and movie id param as dependencies
 
   return (
     <>

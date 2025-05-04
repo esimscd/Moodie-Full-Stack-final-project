@@ -5,7 +5,7 @@ import "../../styles/RandomRoulette.css";
 import StartAgainNavbar from "../navbar/StartAgainNavbar";
 import Footer from "../Footer";
 
-const API_KEY = "577bc4c58ad0efe50eccb22d412606be";
+const API_KEY = import.meta.env.VITE_TMDB_API_KEY;
 
 function RandomRoulette() {
   const location = useLocation();
