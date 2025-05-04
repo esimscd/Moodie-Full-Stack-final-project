@@ -1,7 +1,11 @@
 import React, { useState } from "react";
 import "../../styles/QuizQuestions.css";
 import QuizAnswerButton from "./QuizAnswerButton";
-import danniImage from "../../assets/TeamAvatars/Danni.png";
+import duneImage from "../../assets/quizImages/chalamet-ferguson-dune.jpg";
+import beforeSunsetImage from "../../assets/quizImages/hawke-delpy-before-sunset.png";
+import niagaraImage from "../../assets/quizImages/monroe-niagra.png";
+import neverendingStoryImage from "../../assets/quizImages/never-ending-story.png";
+import badBoysImage from "../../assets/quizImages/smith-lawrence-bad-boys.jpg";
 
 const QuizQuestions = ({ quizAnswers, setQuizAnswers }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -14,8 +18,9 @@ const QuizQuestions = ({ quizAnswers, setQuizAnswers }) => {
         { label: "Fun, vibrant and lighthearted", value: 16 }, //Adds animation as filter
         { label: "Creeping myself out for no reason", value: 27 }, //Horror
         { label: "Blanket, burrito and snacks", value: 10749 }, //Romance
-        { label: "Thinking about the universe and stuff", value: 878 }, //Scifi
+        { label: "Thinking about the universe and stuff", value: 878 }, //Sci-Fi
       ],
+      image: duneImage,
     },
     {
       id: "endingGenre",
@@ -26,6 +31,7 @@ const QuizQuestions = ({ quizAnswers, setQuizAnswers }) => {
         { label: "Like I'm in an enchanted realm", value: 14 }, //Fantasy
         { label: "Exhilirated and like I'm ready to kick butt", value: 28 }, //Action
       ],
+      image: beforeSunsetImage,
     },
     {
       id: "voteAverage",
@@ -35,6 +41,7 @@ const QuizQuestions = ({ quizAnswers, setQuizAnswers }) => {
         { label: "Decent, but I'm no snob", value: 6 },
         { label: "Only the finest for me", value: 8 },
       ],
+      image: niagaraImage,
     },
     {
       id: "filmReleaseDate",
@@ -53,6 +60,7 @@ const QuizQuestions = ({ quizAnswers, setQuizAnswers }) => {
           value: { start: "2000-01-01", end: "2025-12-31" },
         },
       ],
+      image: neverendingStoryImage,
     },
     {
       id: "runTime",
@@ -63,6 +71,7 @@ const QuizQuestions = ({ quizAnswers, setQuizAnswers }) => {
         { label: "I've got a while", value: 120 },
         { label: "I've got all the time in the world", value: 150 },
       ],
+      image: badBoysImage,
     },
   ];
 
@@ -87,7 +96,11 @@ const QuizQuestions = ({ quizAnswers, setQuizAnswers }) => {
         <h2 className="question-wording">{currentQuestion.question}</h2>
 
         <div className="image-container">
-          <img src={danniImage} alt="Danni thinking" id="danni" />
+          <img
+            src={currentQuestion.image}
+            alt="Question image"
+            id="question-image"
+          />
         </div>
 
         <div className="quiz-options-container">
