@@ -12,23 +12,20 @@ const QuizResults = ({ quizAnswers }) => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const location = useLocation();
+  const movieIdParam = new URLSearchParams(location.search).get("movieId");
 
-  const queryParams = new URLSearchParams(location.search);
-  const movieIdParam = queryParams.get("movieId");
-  const fallbackMood = queryParams.get("mood"); // optional fallback
-
-  // Fetch all genres and map id -> name
+  // Fetch genre list once and map ids to names
   useEffect(() => {
     fetch(`https://api.themoviedb.org/3/genre/movie/list?api_key=${API_KEY}&language=en-US`)
-      .then(res => res.json())
-      .then(data => {
+      .then((res) => res.json())
+      .then((data) => {
         const mapping = {};
         data.genres.forEach((g) => {
           mapping[g.id] = g.name;
         });
         setGenreMap(mapping);
       })
-      .catch(err => console.error("Failed to fetch genre list", err));
+      .catch((err) => console.error("Failed to fetch genre list", err));
   }, []);
 
   // Fetch movie(s) based on quiz answers or selected movie ID
@@ -93,16 +90,6 @@ const QuizResults = ({ quizAnswers }) => {
     return genreIds.map((id) => genreMap[id]).filter(Boolean).join(", ") || "N/A";
   };
 
-  const renderMoodMatch = () => {
-    if (quizAnswers?.moods?.length) {
-      return quizAnswers.moods.join(", ");
-    }
-    if (fallbackMood) {
-      return fallbackMood;
-    }
-    return "N/A";
-  };
-
   return (
     <>
       <StartAgainNavbar />
@@ -119,7 +106,6 @@ const QuizResults = ({ quizAnswers }) => {
               src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
               alt={movie.title}
             />
-
             <div className="movie-details">
               <div className="detail-row">
                 <span className="detail-label">Title:</span>
