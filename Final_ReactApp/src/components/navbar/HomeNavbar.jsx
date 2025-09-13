@@ -75,6 +75,11 @@ const HomeNavbar = () => {
               Start Moodie
             </button>
           </li>
+          <li>
+            <Link to="/login">
+            Login
+            </Link>
+          </li>
         </ul>
       </nav>
     </div>

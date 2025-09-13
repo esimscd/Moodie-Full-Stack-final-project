@@ -8,6 +8,7 @@ import ErrorPage from "./pages/ErrorPage";
 import RandomRoulette from "./components/roulette/RandomRoulette";
 import GenreRoulette from "./components/roulette/GenreRoulette";
 import QuizResults from "./components/quizpath/QuizResults";
+import LoginPage from "./pages/LoginPage"
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/genre" element={<GenreRoulette />} />
         <Route path="/randomise" element={<RandomRoulette />} />
         <Route path="/results" element={<QuizResults />} />
+        <Route path="/login" element={<LoginPage/>}/>
 
         {/* Catch-all route for unmatched URLs */}
         <Route path="*" element={<ErrorPage />} />
