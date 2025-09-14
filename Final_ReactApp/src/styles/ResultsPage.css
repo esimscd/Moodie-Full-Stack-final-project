@@ -1,0 +1,109 @@
+/* Base container with gradient and vertical layout */
+.quiz-results-container {
+  position: relative;
+  z-index: 2;
+  padding: 3rem 2rem;
+  background: linear-gradient(
+    90deg,
+    var(--muted-mauve),
+    var(--muted-mauve),
+    var(--vintage-rose)
+  );
+  color: var(--soft-beige);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Title spacing */
+.quiz-results-heading {
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--soft-beige);
+  /* margin-bottom: 1.2rem; */
+}
+
+/* Layout for poster + details */
+.movie-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3rem;
+  max-width: 1100px;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  padding-top: 4rem;
+
+  /* Remove any unwanted box appearance */
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+
+/* Poster styling */
+.movie-image {
+  width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  border: 3px solid var(--soft-beige);
+}
+
+/* Right side: content */
+.movie-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  max-width: 600px;
+  flex: 1;
+  justify-content: center;
+}
+
+/* Label + content row */
+.detail-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+/* Label styling */
+.detail-label {
+  font-weight: bold;
+  font-size: 1.2rem;
+  min-width: 120px;
+  text-align: left;
+  color: var(--soft-beige);
+}
+
+/* Box for values */
+.detail-box {
+  background-color: var(--deep-plum);
+  color: var(--soft-beige);
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  border: 1.5px solid var(--soft-beige);
+  flex: 1;
+  line-height: 1.5;
+  text-align: left;
+}
+
+/* Special styling for multiline text like Synopsis */
+.synopsis-row .detail-label {
+  padding-top: 0.4rem;
+}
+
+/* Popcorn logo - behind content, above footer */
+.popcorn-bg {
+  position: absolute;
+  bottom: 5rem;
+  left: 0;
+  width: 33vw;
+  max-width: 300px;
+  opacity: 0.2;
+  z-index: 1;
+  pointer-events: none;
+  user-select: none;
+}

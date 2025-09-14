@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&family=Dekko&family=Delius&family=Madimi+One&family=Manrope:wght@200..800&family=Maven+Pro:wght@400..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Onest:wght@100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  font-family: "Work Sans", sans-serif;
+}
+
+.nav-container {
+  position: fixed; /* Everything on the page minus the navbar move as you scroll */
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: var(--deep-plum);
+  z-index: 1000;
+}
+
+nav {
+  width: 100%;
+  max-width: 1100px;
+  display: flex;
+  justify-content: flex-end; /* Nav links & button stay on the right of the screen */
+  padding: 22px 0;
+}
+
+ul {
+  display: flex;
+  gap: 30px;
+  list-style: none; /* Gets rid of the bullet point dots */
+  align-items: center;
+}
+
+li a {
+  text-decoration: none; /* Gets rid of the link underline */
+  font-weight: 600;
+}
+
+#start-moodie-btn {
+  background: var(--muted-mauve);
+  border: 3.5px solid var(--soft-beige);
+  padding: 8px 18px;
+  border-radius: 22px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+li a,
+#start-moodie-btn {
+  font-size: 1.4rem;
+  color: var(--soft-beige);
+}
+
+#moodie-logo {
+  width: 100px;
+}
+
+@media only screen and (max-width: 692px) {
+  li a,
+  #start-moodie-btn {
+    font-size: 1.2rem;
+  }
+
+  #moodie-logo {
+    display: none; /* Remove the logo from the navbar to create space for the navlinks  */
+  }
+
+  nav {
+    justify-content: center; /* Centre the navbar horizontally */
+  }
+}
+
+@media only screen and (min-width: 692px) and (max-width: 1215px) {
+  ul {
+    margin-right: 30px; /* Allow a bit of space on the right so the links are not touching the right of the screen */
+  }
+}

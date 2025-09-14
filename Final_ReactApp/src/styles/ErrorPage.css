@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&family=Dekko&family=Delius&family=Madimi+One&family=Manrope:wght@200..800&family=Maven+Pro:wght@400..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Onest:wght@100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+.error-wrapper {
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(
+    var(--muted-mauve),
+    var(--deep-plum),
+    var(--dark-purple-black),
+    var(--muted-mauve),
+    var(--deep-plum)
+  );
+  background-size: 300% 300%;
+  animation: bg 30s ease infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Work Sans", sans-serif;
+  color: var(--soft-beige);
+  box-sizing: border-box;
+  padding: 0 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.error-wrapper::before {
+  content: "";
+  position: absolute;
+  bottom: 2rem;
+  left: 0.5rem;
+  width: 220px;
+  height: 220px;
+  background-image: url("/src/assets/logos/moodie-popcorn.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.75;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.error-card {
+  background: var(--deep-plum);
+  border: 2px solid var(--soft-beige);
+  padding: 4rem 3rem;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 720px;
+  box-sizing: border-box;
+  animation: slideInUp 0.8s ease-out;
+}
+
+@keyframes bg {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.error-card h1 {
+  font-size: 7rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.error-card p {
+  font-size: 1.8rem;
+  margin-bottom: 2.5rem;
+  padding: 0 1.5rem;
+  line-height: 1.6;
+}
+
+.error-btn {
+  font-size: 1.4rem;
+  padding: 1.2rem 2.5rem;
+  background-color: var(--vintage-rose);
+  color: white;
+  border: 3px solid var(--soft-beige);
+  border-radius: 60px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  display: inline-block;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.error-btn:hover {
+  background: white;
+  color: var(--dark-purple-black);
+  animation: tilt-shaking 0.5s infinite;
+}
+
+@keyframes tilt-shaking {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-2deg);
+  }
+  50% {
+    transform: rotate(2deg);
+  }
+  75% {
+    transform: rotate(-2deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
